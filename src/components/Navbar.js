@@ -1,5 +1,6 @@
 import React from 'react'
-import { MenuIcon} from '@heroicons/react/outline'
+import {MenuIcon} from '@heroicons/react/outline'
+import {Link} from 'react-router-dom';
 import MenuItems from '../components/MenuItems';
 import sun from '../components/assets/sun-logo.png'
 import {useState} from 'react';
@@ -15,9 +16,10 @@ const Navbar = () => {
 
   return (
     <>
-        <div className='bg-gradient-to-r from-blue-50 via-indigo-50 to-blue-50 bg-cover bg-center relative fixed w-full h-36 flex justify-between text-black items-center '>           
-            <div>
+        <div className='bg-cover bg-center relative w-full h-36 flex justify-between text-black items-center'>           
+            <div className='flex items-center'>
                 <img src={sun} alt="logo" className='w-24 h-24 scale-150 md:ml-20' />
+                <p className='md:pl-24 md:text-7xl font-anton'>ASTROLOGICAL CALLING.</p>
             </div>
             
             <nav>
@@ -26,8 +28,8 @@ const Navbar = () => {
                 </div>
 
                 <ul className='hidden md:flex gap-8 p-6 uppercase bg-white/10 mr-20'>    
-                    <li>Home</li>
-                    <li>Horoscope</li>
+                    <Link to='/home'><li>Home</li></Link>
+                    <Link to='/horoscope'><li>Horoscope</li></Link>
                     <li>Zodiac</li>
                     <li>About</li>
                 </ul>

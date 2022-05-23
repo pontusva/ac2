@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import bear from '../assets/bear.png';
+import bear from '../assets/bearn.png';
 import {motion} from 'framer-motion';
 
 const Start = () => {
@@ -52,9 +52,9 @@ const Start = () => {
   
   return (
     <>
-      <div className="bg-gradient-to-r from-blue-50 via-indigo-50 to-blue-50 bg-cover bg-center fixed w-screen h-screen">
+      <div className="bg-cover bg-center fixed w-screen h-screen">
           <div className="absolute w-2/3 m-auto md:bottom-[10%] left-[0%] right-[0%] justify-center items-center flex flex-col h-screen leading-4 md:text-4xl text-sm font-anton ">    
-                <motion.img src={bear} variants={bearVariants} animate='animation' alt="/" className='md:w-1/3 md:h-1/3 self-start object-contain w-28 h-28' />
+                <motion.img src={bear} variants={bearVariants} animate='animation' alt="/" className='md:w-1/3 md:h-1/3 self-center object-contain w-28 h-28 pb-5' />
                 <motion.p                 
                   initial='hidden'
                   animate={{opacity: [0,1]}}

@@ -4,8 +4,8 @@ module.exports = {
     extend: {
       'backgroundImage': {
         "start": 'url("./components/assets/astrological-bg.png")',
-        "home": 'url("./components/assets/orange.png")',
-        "navbar":'url("./components/assets/navbar.png")'
+        "home": 'url("./components/assets/night.png")',
+        "navbar":'url("./components/assets/sol-nav.png")'
       },
       
       fontFamily: {
