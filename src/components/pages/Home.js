@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-row w-full justify-center text-justify space-x-36 fixed h-full pt-36">
+      <div className="bg-zinc-50 flex flex-row w-full justify-center text-justify space-x-36 fixed h-full pt-36">
         <div className=''>
           <img src={bear} alt="/" className='object-contain w-96 h-96'/>
         </div>

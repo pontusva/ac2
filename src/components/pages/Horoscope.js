@@ -11,6 +11,7 @@ import sagittarius from '../assets/zodiacSigns/Sagittarius.png'
 import scorpius from '../assets/zodiacSigns/Scorpius.png'
 import virgo from '../assets/zodiacSigns/Virgo.png'
 import pisces from '../assets/zodiacSigns/Pisces.png'
+import {Link} from 'react-router-dom';
 
 import Navbar from '../Navbar'
 
@@ -24,65 +25,65 @@ const Horoscope = () => {
         <div className='fixed z-10 text-center w-full font-anton tracking-wide text-2xl h-0 pt-5'>
                 <p>Click to read todays horoscope...</p>
         </div>
-        <div className='grid grid-cols-4 p-24 justify-items-center bg-cover bg-center fixed w-screen h-screen'>
+        <div className=' bg-zinc-50 grid grid-cols-4 p-24 justify-items-center bg-cover bg-center fixed w-screen h-screen'>
             
             <div className=''> 
-                <p className=' text-center'>Aquarius</p>
-                <img src={aquarius} alt="" className='w-36 h-36 object-contain '   /> 
+                <p className=' text-center font-bold text-xl'>Aquarius</p>
+                <Link to='/aquarius'><img src={aquarius} alt="" className='w-36 h-36 object-contain '   /></Link>  
             </div>
 
             <div>
-                <p className='text-center'>Aries</p> 
-                <img src={aries} alt="" className='w-36 h-36 object-contain '  /> 
+                <p className='text-center font-bold text-xl'>Aries</p> 
+               <Link to='/aries'><img src={aries} alt="" className='w-36 h-36 object-contain '  /></Link> 
             </div>
 
             <div>
-                <p className='text-center'>Cancer</p> 
-                <img src={cancer} alt="" className='w-36 h-36 object-contain'  /> 
+                <p className='text-center font-bold text-xl'>Cancer</p> 
+               <Link to='/cancer'><img src={cancer} alt="" className='w-36 h-36 object-contain'  /></Link>  
             </div>
 
             <div>
-                <p className='text-center'>Capricorn</p> 
-                <img src={capricorn} alt="" className='w-36 h-36 object-contain'  /> 
+                <p className='text-center font-bold text-xl'>Capricorn</p> 
+                <Link to='/capricorn'><img src={capricorn} alt="" className='w-36 h-36 object-contain'  /></Link> 
             </div>
 
             <div>
-                <p className='text-center'>Gemini</p> 
+                <p className='text-center font-bold text-xl'>Gemini</p> 
                 <img src={gemini} alt="" className='w-36 h-36 object-contain'  /> 
             </div>
 
             <div>
-                <p className='text-center'>Leo</p> 
+                <p className='text-center font-bold text-xl'>Leo</p> 
                 <img src={leo} alt="" className='w-36 h-36 object-contain'  /> 
             </div>
 
             <div>
-                <p className='text-center'>Libra</p> 
+                <p className='text-center font-bold text-xl'>Libra</p> 
                 <img src={libra} alt="" className='w-36 h-36 object-contain'  /> 
             </div>
 
             <div>
-                <p className='text-center'>Pisces</p> 
+                <p className='text-center font-bold text-xl'>Pisces</p> 
                 <img src={pisces} alt="" className='w-36 h-36 object-contain'  /> 
             </div>
 
             <div>
-                <p className='text-center'>Sagittarius</p> 
+                <p className='text-center font-bold text-xl'>Sagittarius</p> 
                 <img src={sagittarius} alt="" className='w-36 h-36 object-contain'  /> 
             </div>
 
             <div>
-                <p className='text-center'>Scorpio</p> 
+                <p className='text-center font-bold text-xl'>Scorpio</p> 
                 <img src={scorpius} alt="" className='w-36 h-36 object-contain'  /> 
             </div>
 
             <div> 
-                <p className='text-center'>Taurus</p>
+                <p className='text-center font-bold text-xl'>Taurus</p>
                 <img src={taurus} alt="" className='w-36 h-36 object-contain'  /> 
             </div>
 
             <div>
-                <p className='text-center'>Virgo</p> 
+                <p className='text-center font-bold text-xl'>Virgo</p> 
                 <img src={virgo} alt="" className='w-36 h-36 object-contain'  /> 
             </div>
         </div>
