@@ -1,43 +1,27 @@
-import {React, useEffect, useState} from 'react'
+import {useContext, useState} from 'react';
+import {apiContext} from '../../contexts/ApiContext'
 import Navbar from '../../Navbar';
 import aquarius from '../../assets/zodiacSigns/Aquarius.png'
-import axios from 'axios';
+
 
 
 const Aquarius = () => {
-
-    const [aqua, setAqua] = useState([]); 
-    const [aquaTomorrow, setAquaTomorrow] = useState([]); 
-    
+    const {aqua, aquaTomorrow} = useContext(apiContext);
+     
     const [active, setActive] = useState(false);
 
     const showMenu = () => {
         setActive(!active);
     }
 
-    useEffect(() => {
-        axios.post('https://aztro.sameerkumar.website/?sign=aquarius&day=today')
-        .then((response) => {
-            setAqua(response.data)            
-        })               
-    }, [])
-
-    useEffect(() => {
-        axios.post('https://aztro.sameerkumar.website/?sign=aquarius&day=tomorrow')
-        .then((response) => {
-            console.log(response.data)
-            setAquaTomorrow(response.data)            
-        })               
-    }, [])
-
-
   return (
     <>
         <Navbar />
-        <div className='grid grid-cols-2 bg-zinc-50 fixed h-full w-full content-center pb-24'>
-            <img src={aquarius} alt="/" className='pl-10'/>
-            <div className='text-md text-justify pl-10 pr-10'>
-            <h1 className='text-center font-anton uppercase text-8xl'>aquarius</h1>                     
+        <div className='grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center'>
+            <h1 className='text-center font-anton uppercase text-8xl md:hidden pb-10'>aquarius</h1> 
+            <img src={aquarius} alt="/" className='md:pl-10 md:w-fit md:h-fit h-5/6 w-5/6 object-contain'/>
+            <div className='text-sm text-justify pl-10 pr-10'>
+            <h1 className='text-center font-anton uppercase md:text-8xl hidden md:block'>aquarius</h1>                     
                     <span className='font-anton'>Current Date:</span>  {aqua.current_date} <br />
                     <span className='font-anton'>Compatibility:</span> {aqua.compatibility} <br />
                     <span className='font-anton'>Lucky Number:</span> {aqua.lucky_number} <br />

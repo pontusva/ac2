@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className='bg-cover bg-zinc-50 bg-center relative w-full h-36 flex justify-between text-black items-center'>           
             <div className='flex items-center'>
                 <img src={sun} alt="logo" className='w-24 h-24 scale-150 md:ml-20' />
-                <p className='md:pl-24 md:text-7xl font-anton'>ASTROLOGICAL CALLING.</p>
+                <p className='md:pl-24 md:text-5xl md:visible text-xl font-anton pl-9'>ASTROLOGICAL CALLING.</p>
             </div>
             
             <nav>
@@ -27,7 +27,7 @@ const Navbar = () => {
                     <MenuIcon className='w-5 scale-150 cursor-pointer' onClick={showMenu}/>
                 </div>
 
-                <ul className='hidden md:flex gap-8 p-6 uppercase bg-white/10 mr-20'>    
+                <ul className='hidden md:flex gap-8 p-6 uppercase bg-white/10 mr-20 md:text-md text-sm'>    
                     <Link to='/home'><li>Home</li></Link>
                     <Link to='/horoscope'><li>Horoscope</li></Link>
                     <li>Zodiac</li>

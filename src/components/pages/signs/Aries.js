@@ -1,13 +1,13 @@
-import {React, useEffect, useState} from 'react'
+import {React, useContext, useState} from 'react'
+import {apiContext} from '../../contexts/ApiContext'
 import Navbar from '../../Navbar';
 import ariespic from '../../assets/zodiacSigns/Aries.png'
-import axios from 'axios';
+
 
 
 const Aries = () => {
 
-    const [aries, setAries] = useState([]); 
-    const [ariesTomorrow, setAriesTomorrow] = useState([]); 
+    const {aries, ariesTomorrow} = useContext(apiContext);
     
     const [active, setActive] = useState(false);
 
@@ -15,29 +15,16 @@ const Aries = () => {
         setActive(!active);
     }
 
-    useEffect(() => {
-        axios.post('https://aztro.sameerkumar.website/?sign=aries&day=today')
-        .then((response) => {
-            setAries(response.data)            
-        })               
-    }, [])
-
-    useEffect(() => {
-        axios.post('https://aztro.sameerkumar.website/?sign=aries&day=tomorrow')
-        .then((response) => {
-            console.log(response.data)
-            setAriesTomorrow(response.data)            
-        })               
-    }, [])
 
 
   return (
     <>
         <Navbar />
-        <div className='grid grid-cols-2 bg-zinc-50 fixed h-full w-full content-center'>
-            <img src={ariespic} alt="/" className='pl-10'/>
-            <div className='text-md text-justify pl-10 pr-10'>
-            <h1 className='text-center font-anton uppercase text-8xl'>aries</h1>                     
+        <div className='grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center'>
+            <h1 className='text-center font-anton uppercase text-8xl md:hidden pb-10'>aries</h1>
+            <img src={ariespic} alt="/" className='md:pl-10 w-5/6 h-5/6 object-contain'/>
+            <div className='text-sm  text-justify pl-10 pr-10'>
+            <h1 className='text-center font-anton uppercase text-8xl hidden md:block'>aries</h1>                     
                     <span className='font-anton'>Current Date:</span>  {aries.current_date} <br />
                     <span className='font-anton'>Compatibility:</span> {aries.compatibility} <br />
                     <span className='font-anton'>Lucky Number:</span> {aries.lucky_number} <br />

@@ -1,12 +1,11 @@
-import {React, useEffect, useState} from 'react'
-import cancer from '../../assets/zodiacSigns/Cancer.png'
-import axios from 'axios';
+import {React, useContext, useState} from 'react';
+import cancer from '../../assets/zodiacSigns/Cancer.png';
+import {apiContext} from '../../contexts/ApiContext';
 import Navbar from '../../Navbar';
 
 const Cancer = () => {
 
-    const [cancerSign, setCancerSign] = useState([]); 
-    const [cancerTomorrow, setCancerTomorrow] = useState([]); 
+    const {cancerSign, cancerTomorrow} = useContext(apiContext);
     
     const [active, setActive] = useState(false);
 
@@ -14,28 +13,16 @@ const Cancer = () => {
         setActive(!active);
     }
 
-    useEffect(() => {
-        axios.post('https://aztro.sameerkumar.website/?sign=aquarius&day=today')
-        .then((response) => {
-            setCancerSign(response.data)            
-        })               
-    }, [])
-
-    useEffect(() => {
-        axios.post('https://aztro.sameerkumar.website/?sign=aquarius&day=tomorrow')
-        .then((response) => {
-            console.log(response.data)
-            setCancerTomorrow(response.data)            
-        })               
-    }, [])
+   
 
   return (
     <>
         <Navbar />
-        <div className='grid grid-cols-2 bg-zinc-50 fixed h-full w-full '>
-            <img src={cancer} alt="/" className='pl-10'/>
-            <div className='text-md text-justify pl-10 pr-10'>
-            <h1 className='text-center font-anton uppercase text-8xl'>cancer</h1>                     
+        <div className='grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center '>
+            <h1 className='text-center font-anton uppercase text-8xl md:hidden pb-10'>cancer</h1>  
+            <img src={cancer} alt="/" className='md:pl-10 md:w-fit h-5/6 w-5/6 object-contain '/>
+            <div className='text-sm text-justify pl-10 pr-10'>
+            <h1 className='text-center font-anton uppercase text-8xl hidden md:block'>cancer</h1>                     
                     <span className='font-anton'>Current Date:</span>  {cancerSign.current_date} <br />
                     <span className='font-anton'>Compatibility:</span> {cancerSign.compatibility} <br />
                     <span className='font-anton'>Lucky Number:</span> {cancerSign.lucky_number} <br />

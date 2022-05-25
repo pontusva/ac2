@@ -1,12 +1,12 @@
-import {React, useEffect, useState} from 'react'
+import {React, useContext, useState} from 'react'
 import capricorn from '../../assets/zodiacSigns/Capricorn.png'
+import {apiContext} from '../../contexts/ApiContext'
 import axios from 'axios';
 import Navbar from '../../Navbar';
 
 const Capricorn = () => {
 
-    const [capricornSign, setCapricornSign] = useState([]); 
-    const [capricornTomorrow, setCapricornTomorrow] = useState([]); 
+    const {capricornSign, capricornTomorrow} = useContext(apiContext);
     
     const [active, setActive] = useState(false);
 
@@ -14,28 +14,16 @@ const Capricorn = () => {
         setActive(!active);
     }
 
-    useEffect(() => {
-        axios.post('https://aztro.sameerkumar.website/?sign=aquarius&day=today')
-        .then((response) => {
-            setCapricornSign(response.data)            
-        })               
-    }, [])
-
-    useEffect(() => {
-        axios.post('https://aztro.sameerkumar.website/?sign=aquarius&day=tomorrow')
-        .then((response) => {
-            console.log(response.data)
-            setCapricornTomorrow(response.data)            
-        })               
-    }, [])
+    
 
   return (
     <>
         <Navbar />
-        <div className='grid grid-cols-2 bg-zinc-50 fixed h-full w-full '>
-            <img src={capricorn} alt="/" className='pl-10'/>
-            <div className='text-md text-justify pl-10 pr-10'>
-            <h1 className='text-center font-anton uppercase text-8xl'>cancer</h1>                     
+        <div className='grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center  '>
+            <h1 className='text-center font-anton uppercase text-7xl md:hidden pb-10'>capricorn</h1>
+            <img src={capricorn} alt="/" className='md:pl-10 object-contain w-5/6 h-5/6'/>
+            <div className='text-sm text-justify pl-10 pr-10'>
+            <h1 className='text-center font-anton uppercase md:text-8xl text-6xl hidden md:block'>capricorn</h1>                     
                     <span className='font-anton'>Current Date:</span>  {capricornSign.current_date} <br />
                     <span className='font-anton'>Compatibility:</span> {capricornSign.compatibility} <br />
                     <span className='font-anton'>Lucky Number:</span> {capricornSign.lucky_number} <br />
