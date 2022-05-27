@@ -1,19 +1,47 @@
-import React from 'react'
-import Navbar from '../Navbar'
-import bear from '../assets/bear.png';
+import React from "react";
+import Navbar from "../Navbar";
+import bear from "../assets/bear.png";
 
 const Home = () => {
-  return (
-    <>
-      <Navbar />
-      <div className="bg-zinc-50 flex md:flex-row flex-col md:w-full w-screen justify-center text-justify md:space-x-36 md:fixed md:h-full h-screen pt-36">
-        <div className='bg-zinc-50'>
-          <img src={bear} alt="/" className='object-contain md:w-80 w-full h-80'/>
-        </div>
-        <div className='md:w-96 h-96 w-full text-sm lg:text-sm px-3 bg-zinc-50'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cumque, possimus dolores non nulla voluptatum aperiam voluptatem iure explicabo accusantium commodi optio blanditiis sint suscipit magnam labore atque recusandae delectus sequi facilis voluptates dolorem adipisci. Dolore, odit beatae. Fuga repellat, deserunt est mollitia iusto ullam perspiciatis ducimus quasi, harum quod placeat cupiditate aliquam unde iste quos quaerat, itaque ratione nisi minima laudantium architecto nobis dolores distinctio? A voluptates dolorem, modi incidunt rem exercitationem iusto debitis velit ratione laborum reprehenderit odio libero enim dolore expedita magni vitae aut esse consequuntur quibusdam error, fugit aperiam? Tenetur inventore totam dignissimos pariatur iure voluptatum, tempora</div>
-      </div>
-    </>
-  )
-}
+	return (
+		<>
+			<Navbar />
+			<div className="bg-zinc-50 flex md:flex-row flex-col md:w-full w-screen justify-center text-justify md:space-x-36 md:fixed md:h-full h-screen pt-36">
+				<div className="bg-zinc-50">
+					<img
+						src={bear}
+						alt="/"
+						className="object-contain md:w-80 w-full h-80"
+					/>
+				</div>
+				<div className="md:w-96 h-96 w-full text-sm lg:text-sm md:px-3 p-5 bg-zinc-50">
+					<p>
+						Welcome to Astrological Calling. This site is all
+						about curiosity and I am very glad to meet you.
+						Here you can explore your horoscope and find
+						information about the zodiac signs. The purpose of this
+						website is to give you an insight to yours and
+						other's zodiac signs, but also as a personal
+						project for me to showcase to future employers. I
+						really hope you enjoy your stay, and if you have
+						any questions head over to the about page and you
+						will find the information you need. To wrap things
+						up, below is a quote by Marilyn Monroe I really
+						like.
+					</p>
+					<br />
+					<q className="">
+						Imperfection is beauty, madness is genius and it's
+						better to be absolutely ridiculous than absolutely
+						boring.
+					</q>
+					<div className="w-full text-right">
+						― Marilyn Monroe
+					</div>
+				</div>
+			</div>
+		</>
+	);
+};
 
-export default Home
+export default Home;
