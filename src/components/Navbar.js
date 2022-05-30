@@ -45,7 +45,7 @@ const Navbar = () => {
 						/>
 					</div>
 
-					<ul className="hidden md:flex gap-8 p-6 uppercase bg-white/10 mr-20 text-lg text-sm font-bold">
+					<ul className="hidden md:flex gap-8 p-6 uppercase bg-white/10 mr-20 text-lg font-bold">
 						<Link to="/home">
 							<motion.li
 								variants={linkVariants}

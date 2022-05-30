@@ -1,6 +1,7 @@
 import React from "react";
 import { XIcon } from "@heroicons/react/outline";
-const Modal = ({ closeModal }) => {
+
+const SagittariusModal = ({ closeModalSagittarius }) => {
 	// Makin a modal....
 
 	return (
@@ -9,7 +10,7 @@ const Modal = ({ closeModal }) => {
 				<div className="modalContainer w-[500px]">
 					<div
 						className="flex justify-center"
-						onClick={() => closeModal(false)}
+						onClick={() => closeModalSagittarius(false)}
 					>
 						<XIcon className="w-5 h-5" />
 					</div>
@@ -21,8 +22,9 @@ const Modal = ({ closeModal }) => {
 						<br />
 						You don't have to know about every Sign. Write to
 						me and we'll have a talk about how we can help
-						each other out.<br /> Please head over to the "about me"
-						section to find contact information!
+						each other out.
+						<br /> Please head over to the "about me" section
+						to find contact information!
 					</div>
 				</div>
 			</div>
@@ -30,4 +32,4 @@ const Modal = ({ closeModal }) => {
 	);
 };
 
-export default Modal;
+export default SagittariusModal;
