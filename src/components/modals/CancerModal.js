@@ -6,7 +6,7 @@ const CancerModal = ({ closeModalCancer }) => {
 
 	return (
 		<>
-			<div className="modalBackground text-black  w-full h-screen fixed let-0 right-0 bottom-0 items-center flex justify-center bg-black/50 backdrop-blur-lg">
+			<div className="modalBackground text-black  w-full h-screen fixed let-0 right-0 bottom-0 items-center flex justify-center bg-black/50 backdrop-blur-lg text-sm md:text-lg md:px-0 px-10">
 				<div className="modalContainer w-[500px]">
 					<div
 						className="flex justify-center"
@@ -23,8 +23,8 @@ const CancerModal = ({ closeModalCancer }) => {
 						You don't have to know about every Sign. Write to
 						me and we'll have a talk about how we can help
 						each other out.
-						<br /> Please head over to the "about me" section
-						to find contact information!
+						<br /> Please head over to the "about" section to
+						find contact information!
 					</div>
 				</div>
 			</div>

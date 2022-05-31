@@ -73,7 +73,15 @@ const Navbar = () => {
 								Zodiac
 							</motion.li>
 						</Link>
-						<li>About</li>
+						<Link to="/about">
+							<motion.li
+								variants={linkVariants}
+								whileHover="hover"
+								whileTap="tap"
+							>
+								About
+							</motion.li>
+						</Link>
 					</ul>
 					<MenuItems showMenu={showMenu} active={active} />
 				</nav>

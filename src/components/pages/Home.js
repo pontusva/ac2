@@ -6,7 +6,7 @@ const Home = () => {
 	return (
 		<>
 			<Navbar />
-			<div className="bg-zinc-50 flex md:flex-row flex-col md:w-full w-screen justify-center text-justify md:space-x-36 md:fixed md:h-full h-screen pt-36">
+			<div className="bg-zinc-50 flex md:flex-row flex-col md:w-full w-full justify-center text-justify md:space-x-36 md:fixed md:h-full h-screen pt-36">
 				<div className="bg-zinc-50">
 					<img
 						src={bear}
@@ -14,7 +14,7 @@ const Home = () => {
 						className="object-contain md:w-80 w-full h-80"
 					/>
 				</div>
-				<div className="md:w-96 h-96 w-full text-sm lg:text-sm md:px-3 p-5 bg-zinc-50">
+				<div className="md:w-96 h-96 w-full text-sm lg:text-sm md:px-3 p-5 bg-zinc-50 font-roboto">
 					<p>
 						Welcome to Astrological Calling. This site is all
 						about curiosity and I am very glad to meet you.

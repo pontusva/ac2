@@ -1,5 +1,6 @@
 import Start from "./components/pages/Start";
 import Home from "./components/pages/Home";
+import About from "./components/pages/About";
 import Horoscope from "./components/pages/Horoscope";
 import Zodiac from "./components/pages/Zodiac";
 import Aquarius from "./components/pages/signs/Aquarius";
@@ -239,7 +240,8 @@ function App() {
 							path="/horoscope"
 							element={<Horoscope />}
 						/>
-            <Route path='/zodiac' element={<Zodiac />} />
+						<Route path="/about" element={<About />} />
+						<Route path="/zodiac" element={<Zodiac />} />
 						<Route path="/aquarius" element={<Aquarius />} />
 						<Route path="/aries" element={<Aries />} />
 						<Route path="/cancer" element={<Cancer />} />

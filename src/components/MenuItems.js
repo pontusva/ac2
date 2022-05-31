@@ -19,8 +19,12 @@ const MenuItems = ({ showMenu, active }) => {
 				<Link to="/horoscope">
 					<li>Horoscope</li>
 				</Link>
-				<li>Zodiac</li>
-				<li>About</li>
+				<Link to="/zodiac">
+					<li>Zodiac</li>
+				</Link>
+				<Link to='/about'>
+					<li>About</li>
+				</Link>
 			</ul>
 		</>
 	);

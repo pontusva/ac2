@@ -19,10 +19,10 @@ const Horoscope = () => {
 	return (
 		<>
 			<Navbar />
-			<div className="md:hidden text-center w-full font-anton tracking-wide md:text-xl text-sm h-full pt-5 bg-zinc-50">
+			<div className=" text-center pt-5 w-full font-anton tracking-wide md:text-xl text-sm h-full bg-zinc-50">
 				<p>Click to read todays horoscope...</p>
 			</div>
-			<div className="gap-x-2 z-10 bg-zinc-50 grid md:grid-cols-4 grid-cols-3 md:p-24 p-3 pt-10 justify-items-center gap-8 bg-cover bg-center md:fixed w-screen h-full">
+			<div className="gap-x-2 z-10 bg-zinc-50  grid md:grid-cols-4 grid-cols-3 md:p-24 p-3 justify-items-center gap-8 bg-cover bg-center md:fixed w-screen h-full">
 				<div className="">
 					<p className=" text-center font-bold text-xl text-sky-700">
 						Aquarius
