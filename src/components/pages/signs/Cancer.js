@@ -14,7 +14,10 @@ const Cancer = () => {
 
 	return (
 		<>
-			<Navbar />
+			<nav>
+				<Navbar />
+			</nav>
+
 			<div className="grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center ">
 				<h1 className="text-center font-anton uppercase text-8xl md:hidden pb-10">
 					cancer

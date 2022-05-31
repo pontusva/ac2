@@ -17,168 +17,172 @@ import Navbar from "../Navbar";
 
 const Horoscope = () => {
 	return (
-		<>
-			<Navbar />
-			<div className=" text-center pt-5 w-full font-anton tracking-wide md:text-xl text-sm h-full bg-zinc-50">
-				<p>Click to read todays horoscope...</p>
-			</div>
-			<div className="gap-x-2 z-10 bg-zinc-50  grid md:grid-cols-4 grid-cols-3 md:p-24 p-3 justify-items-center gap-8 bg-cover bg-center md:fixed w-screen h-full">
-				<div className="">
-					<p className=" text-center font-bold text-xl text-sky-700">
-						Aquarius
-					</p>
-					<Link to="/aquarius">
-						<img
-							src={aquarius}
-							alt=""
-							className="w-24 h-24 object-contain "
-						/>
-					</Link>
+		<>	¨
+			<nav>
+				<Navbar />
+			</nav>
+			<section>
+				<div className=" text-center pt-5 w-full font-anton tracking-wide md:text-xl text-sm h-full bg-zinc-50">
+					<p>Click to read todays horoscope...</p>
 				</div>
+				<div className="gap-x-2 z-10 bg-zinc-50  grid md:grid-cols-4 grid-cols-3 md:p-24 p-3 justify-items-center gap-8 bg-cover bg-center md:fixed w-screen h-full">
+					<div className="">
+						<p className=" text-center font-bold text-xl text-sky-700">
+							Aquarius
+						</p>
+						<Link to="/aquarius">
+							<img
+								src={aquarius}
+								alt=""
+								className="w-24 h-24 object-contain "
+							/>
+						</Link>
+					</div>
 
-				<div>
-					<p className="text-center font-bold text-xl text-sky-700">
-						Aries
-					</p>
-					<Link to="/aries">
-						<img
-							src={aries}
-							alt=""
-							className="w-24 h-24 object-contain "
-						/>
-					</Link>
-				</div>
+					<div>
+						<p className="text-center font-bold text-xl text-sky-700">
+							Aries
+						</p>
+						<Link to="/aries">
+							<img
+								src={aries}
+								alt=""
+								className="w-24 h-24 object-contain "
+							/>
+						</Link>
+					</div>
 
-				<div>
-					<p className="text-center font-bold text-xl text-sky-700">
-						Cancer
-					</p>
-					<Link to="/cancer">
-						<img
-							src={cancer}
-							alt=""
-							className="w-24 h-24 object-contain"
-						/>
-					</Link>
-				</div>
+					<div>
+						<p className="text-center font-bold text-xl text-sky-700">
+							Cancer
+						</p>
+						<Link to="/cancer">
+							<img
+								src={cancer}
+								alt=""
+								className="w-24 h-24 object-contain"
+							/>
+						</Link>
+					</div>
 
-				<div>
-					<p className="text-center font-bold text-xl text-sky-700">
-						Capricorn
-					</p>
-					<Link to="/capricorn">
-						<img
-							src={capricorn}
-							alt=""
-							className="w-24 h-24 object-contain"
-						/>
-					</Link>
-				</div>
+					<div>
+						<p className="text-center font-bold text-xl text-sky-700">
+							Capricorn
+						</p>
+						<Link to="/capricorn">
+							<img
+								src={capricorn}
+								alt=""
+								className="w-24 h-24 object-contain"
+							/>
+						</Link>
+					</div>
 
-				<div>
-					<p className="text-center font-bold text-xl text-sky-700">
-						Gemini
-					</p>
-					<Link to="/gemini">
-						<img
-							src={gemini}
-							alt=""
-							className="w-24 h-24 object-contain"
-						/>{" "}
-					</Link>
-				</div>
+					<div>
+						<p className="text-center font-bold text-xl text-sky-700">
+							Gemini
+						</p>
+						<Link to="/gemini">
+							<img
+								src={gemini}
+								alt=""
+								className="w-24 h-24 object-contain"
+							/>
+						</Link>
+					</div>
 
-				<div>
-					<p className="text-center font-bold text-xl text-sky-700">
-						Leo
-					</p>
-					<Link to="/leo">
-						<img
-							src={leo}
-							alt=""
-							className="w-24 h-24 object-contain"
-						/>
-					</Link>
-				</div>
+					<div>
+						<p className="text-center font-bold text-xl text-sky-700">
+							Leo
+						</p>
+						<Link to="/leo">
+							<img
+								src={leo}
+								alt=""
+								className="w-24 h-24 object-contain"
+							/>
+						</Link>
+					</div>
 
-				<div>
-					<p className="text-center font-bold text-xl text-sky-700">
-						Libra
-					</p>
-					<Link to="/libra">
-						<img
-							src={libra}
-							alt=""
-							className="w-24 h-24 object-contain"
-						/>{" "}
-					</Link>
-				</div>
+					<div>
+						<p className="text-center font-bold text-xl text-sky-700">
+							Libra
+						</p>
+						<Link to="/libra">
+							<img
+								src={libra}
+								alt=""
+								className="w-24 h-24 object-contain"
+							/>
+						</Link>
+					</div>
 
-				<div>
-					<p className="text-center font-bold text-xl text-sky-700">
-						Pisces
-					</p>
-					<Link to="/pisces">
-						<img
-							src={pisces}
-							alt=""
-							className="w-24 h-24 object-contain"
-						/>
-					</Link>
-				</div>
+					<div>
+						<p className="text-center font-bold text-xl text-sky-700">
+							Pisces
+						</p>
+						<Link to="/pisces">
+							<img
+								src={pisces}
+								alt=""
+								className="w-24 h-24 object-contain"
+							/>
+						</Link>
+					</div>
 
-				<div>
-					<p className="text-center font-bold text-xl text-sky-700">
-						Sagittarius
-					</p>
-					<Link to="/sagittarius">
-						<img
-							src={sagittarius}
-							alt=""
-							className="w-24 h-24 object-contain"
-						/>
-					</Link>
-				</div>
+					<div>
+						<p className="text-center font-bold text-xl text-sky-700">
+							Sagittarius
+						</p>
+						<Link to="/sagittarius">
+							<img
+								src={sagittarius}
+								alt=""
+								className="w-24 h-24 object-contain"
+							/>
+						</Link>
+					</div>
 
-				<div>
-					<p className="text-center font-bold text-xl text-sky-700">
-						Scorpio
-					</p>
-					<Link to="/scorpio">
-						<img
-							src={scorpius}
-							alt=""
-							className="w-24 h-24 object-contain"
-						/>{" "}
-					</Link>
-				</div>
+					<div>
+						<p className="text-center font-bold text-xl text-sky-700">
+							Scorpio
+						</p>
+						<Link to="/scorpio">
+							<img
+								src={scorpius}
+								alt=""
+								className="w-24 h-24 object-contain"
+							/>
+						</Link>
+					</div>
 
-				<div>
-					<p className="text-center font-bold text-xl text-sky-700">
-						Taurus
-					</p>
-					<Link to="/taurus">
-						<img
-							src={taurus}
-							alt=""
-							className="w-24 h-24 object-contain"
-						/>
-					</Link>
-				</div>
+					<div>
+						<p className="text-center font-bold text-xl text-sky-700">
+							Taurus
+						</p>
+						<Link to="/taurus">
+							<img
+								src={taurus}
+								alt=""
+								className="w-24 h-24 object-contain"
+							/>
+						</Link>
+					</div>
 
-				<div>
-					<p className="text-center font-bold text-xl text-sky-700">
-						Virgo
-					</p>
-					<Link to="/virgo">
-						<img
-							src={virgo}
-							alt=""
-							className="w-24 h-24 object-contain"
-						/>
-					</Link>
+					<div>
+						<p className="text-center font-bold text-xl text-sky-700">
+							Virgo
+						</p>
+						<Link to="/virgo">
+							<img
+								src={virgo}
+								alt=""
+								className="w-24 h-24 object-contain"
+							/>
+						</Link>
+					</div>
 				</div>
-			</div>
+			</section>
 		</>
 	);
 };

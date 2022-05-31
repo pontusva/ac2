@@ -5,7 +5,10 @@ import bear from "../assets/bear.png";
 const Home = () => {
 	return (
 		<>
-			<Navbar />
+			<nav>
+				<Navbar />
+			</nav>
+
 			<div className="bg-zinc-50 flex md:flex-row flex-col md:w-full w-full justify-center text-justify md:space-x-36 md:fixed md:h-full h-screen pt-36">
 				<div className="bg-zinc-50">
 					<img
@@ -19,9 +22,9 @@ const Home = () => {
 						Welcome to Astrological Calling. This site is all
 						about curiosity and I am very glad to meet you.
 						Here you can explore your horoscope and find
-						information about the zodiac signs. The purpose of this
-						website is to give you an insight to yours and
-						other's zodiac signs, but also as a personal
+						information about the zodiac signs. The purpose of
+						this website is to give you an insight to yours
+						and other's zodiac signs, but also as a personal
 						project for me to showcase to future employers. I
 						really hope you enjoy your stay, and if you have
 						any questions head over to the about page and you
