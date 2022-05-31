@@ -24,7 +24,7 @@ const About = () => {
 						<span className="font-bold">
 							pontusabrahamsson92@gmail.com
 						</span>
-						, Name your Email "Astroligcal Calling" and I will
+						, Name your Email "Astrological Calling" and I will
 						get back to you asap. If you are interested in working with me,
 						Please use the same Email and Naming on the email!
 					</p>
