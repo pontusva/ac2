@@ -19,19 +19,19 @@ const Home = () => {
 					</div>
 					<div className="md:w-96 h-96 w-full text-sm lg:text-sm md:px-3 p-5 bg-zinc-50 font-roboto">
 						<p>
-							Welcome to Astrological Calling. This site is
-							all about curiosity and I am very glad to
-							meet you. Here you can explore your horoscope
-							and find information about the zodiac signs.
-							The purpose of this website is to give you an
-							insight to yours and other's zodiac signs,
-							but also as a personal project for me to
-							showcase to future employers. I really hope
-							you enjoy your stay, and if you have any
-							questions head over to the about page and you
-							will find the information you need. To wrap
-							things up, below is a quote by Marilyn Monroe
-							I really like.
+							<span className='font-bold'>Welcome to Astrological Calling.</span>{" "}
+							This site is all about curiosity and I am
+							very glad to meet you. Here you can explore
+							your horoscope and find information about the
+							zodiac signs. The purpose of this website is
+							to give you an insight to yours and other's
+							zodiac signs, but also as a personal project
+							for me to showcase to future employers. I
+							really hope you enjoy your stay, and if you
+							have any questions head over to the about
+							page and you will find the information you
+							need. To wrap things up, below is a quote by
+							Marilyn Monroe I really like.
 						</p>
 						<br />
 						<q className="">

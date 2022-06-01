@@ -32,8 +32,10 @@ const Navbar = () => {
 						alt="logo"
 						className="w-24 h-24 scale-150 md:ml-20"
 					/>
-					<p className="md:pl-24 md:text-5xl md:visible text-xl font-anton pl-9">
-						ASTROLOGICAL CALLING.
+					<p className="md:pl-24 md:text-5xl md:visible text-xl font-anton pl-7 self-start md:self-center">
+						<span className="text-yellow-500">
+							ASTROLOGICAL CALLING.
+						</span>
 					</p>
 				</div>
 

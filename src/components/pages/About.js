@@ -8,11 +8,11 @@ const About = () => {
 			<nav>
 				<Navbar />
 			</nav>
-			<sectuon>
+			<section>
 				<div className="bg-zinc-50 flex md:flex-row flex-col md:w-full w-screen justify-center text-justify md:space-x-36 md:fixed md:h-full h-screen pt-36">
 					<div className="md:w-96 h-96 w-full text-sm lg:text-sm md:px-3 p-5 bg-zinc-50 font-roboto">
 						<h1 className="font-anton text-xl text-center">
-							Welcome To The About Page
+							Welcome To The About Page at Astrological Calling
 						</h1>
 						<p className="leading-6">
 							This is a project I have been working on to
@@ -42,7 +42,11 @@ const About = () => {
 						/>
 					</div>
 				</div>
-			</sectuon>
+				<div>
+					<h2>Special Thanks To</h2>
+					
+				</div>
+			</section>
 		</>
 	);
 };

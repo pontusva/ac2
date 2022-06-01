@@ -6,13 +6,13 @@ const SagittariusModal = ({ closeModalSagittarius }) => {
 
 	return (
 		<>
-			<div className="modalBackground text-black  w-full h-screen fixed let-0 right-0 bottom-0 items-center flex justify-center bg-black/50 backdrop-blur-lg text-sm md:text-lg md:px-0 px-10">
+			<div className="modalBackground z-10 text-black  w-full h-screen fixed let-0 right-0 bottom-0 items-center flex justify-center bg-black/50 backdrop-blur-lg text-sm md:text-lg md:px-0 px-10">
 				<div className="modalContainer w-[500px]">
 					<div
 						className="flex justify-center"
 						onClick={() => closeModalSagittarius(false)}
 					>
-						<XIcon className="w-5 h-5" />
+						<XIcon className="w-5 h-5 text-white scale-150" />
 					</div>
 					<div className="w-full text-white text-md font-sans text-justify">
 						<p className="leading-6">
