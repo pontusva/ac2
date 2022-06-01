@@ -33,7 +33,7 @@ const Zodiac = () => {
 			<nav>
 				<Navbar />
 			</nav>
-			<div className="text-center z-10 w-full font-anton tracking-wide md:text-xl text-sm h-full pt-5 bg-zinc-50">
+			<div className="hidden text-center z-10 w-full font-anton tracking-wide md:text-xl text-sm h-full pt-5 bg-zinc-50">
 				<p>Click to read about the Zodiac...</p>
 			</div>
 
