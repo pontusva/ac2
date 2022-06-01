@@ -8,12 +8,14 @@ const About = () => {
 			<nav>
 				<Navbar />
 			</nav>
-			<section>
-				<div className="bg-zinc-50 flex md:flex-row flex-col md:w-full w-screen justify-center text-justify md:space-x-36 md:fixed md:h-full h-screen pt-36">
+			<section className="h-screen bg-zinc-50">
+				<div className="bg-zinc-50 flex md:flex-row flex-col md:w-full w-full justify-center text-justify md:space-x-36 pt-36">
 					<div className="md:w-96 h-96 w-full text-sm lg:text-sm md:px-3 p-5 bg-zinc-50 font-roboto">
 						<h1 className="font-anton text-xl text-center">
-							Welcome To The About Page at Astrological Calling
+							The About Page at Astrological
+							Calling
 						</h1>
+						<br />
 						<p className="leading-6">
 							This is a project I have been working on to
 							show some of my web-dev abilities. I am a
@@ -42,9 +44,56 @@ const About = () => {
 						/>
 					</div>
 				</div>
-				<div>
+				<div className="md:pt-0 pt-5 bg-zinc-50 text-center font-roboto">
 					<h2>Special Thanks To</h2>
-					
+					<br />
+					<div className="flex flex-col ">
+						<p>
+							<a
+								className="font-anton underline"
+								href="https://pixabay.com/sv/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=160494"
+							>
+								OpenClipart-Vectors
+							</a>{" "}
+							from{" "}
+							<a
+								className="font-anton underline"
+								href="https://pixabay.com/sv/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=160494"
+							>
+								Pixabay
+							</a>
+						</p>
+						<p>
+							<a
+								className="font-anton underline"
+								href="https://pixabay.com/sv/users/davidrockdesign-2595351/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1468009"
+							>
+								DavidRockDesign
+							</a>{" "}
+							from{" "}
+							<a
+								className="font-anton underline"
+								href="https://pixabay.com/sv/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1468009"
+							>
+								Pixabay
+							</a>
+						</p>
+						<p>
+							<a
+								className="font-anton underline"
+								href="https://pixabay.com/sv/users/teacherbingo-18391860/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6834518"
+							>
+								Harald Eicher
+							</a>{" "}
+							from{" "}
+							<a
+								className="font-anton underline"
+								href="https://pixabay.com/sv/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6834518"
+							>
+								Pixabay
+							</a>
+						</p>
+					</div>
 				</div>
 			</section>
 		</>
