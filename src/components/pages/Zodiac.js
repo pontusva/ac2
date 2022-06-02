@@ -53,8 +53,8 @@ const Zodiac = () => {
 			</div>
 
 			<section className="h-[100%] bg-zinc-50">
-				<div className="md:gap-x-8 z-10 bg-zinc-50 grid md:grid-cols-3 grid-cols-1 md:pb-24 md:p-24 md:pt-24 pt-5 justify-items-center md:gap-8 w-full h-[100%] text-center font-anton text-4xl text-yellow-400">
-					<div className="relative w-48 h-48 rounded-full overflow-hidden">
+				<div className="md:gap-x-8 z-10 bg-zinc-50 grid md:grid-cols-3 grid-cols-2 md:pb-24 md:p-24 md:pt-24 pt-5 justify-items-center md:gap-8 w-full h-[100%] text-center font-anton text-4xl text-yellow-400">
+					<div className="relative md:w-48 md:h-48 w-36 h-36  rounded-full overflow-hidden">
 						<img
 							src={aquarius}
 							alt="aquarius constellation"
@@ -76,7 +76,7 @@ const Zodiac = () => {
 						</div>
 					</div>
 
-					<div className="relative w-48 h-48 rounded-full overflow-hidden">
+					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={aries} alt="aries constellation" />
 						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-yellow-400 text-xl text-center leading-4">
 							<button
@@ -93,7 +93,7 @@ const Zodiac = () => {
 						</div>
 					</div>
 
-					<div className="relative w-48 h-48 rounded-full overflow-hidden">
+					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={cancer} alt="cancer constellation" />
 						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-yellow-400 text-xl text-center leading-4">
 							<button
@@ -110,7 +110,7 @@ const Zodiac = () => {
 						</div>
 					</div>
 
-					<div className="relative w-48 h-48 rounded-full overflow-hidden">
+					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={capricorn} alt="" />
 						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-yellow-400 text-xl text-center leading-4">
 							<button
@@ -131,7 +131,7 @@ const Zodiac = () => {
 						</div>
 					</div>
 
-					<div className="relative w-48 h-48 rounded-full overflow-hidden">
+					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={gemini} alt="gemini constellation" />
 						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-yellow-400 text-xl text-center leading-4">
 							<button
@@ -148,7 +148,7 @@ const Zodiac = () => {
 						</div>
 					</div>
 
-					<div className="relative w-48 h-48 rounded-full overflow-hidden">
+					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={leo} alt="leo constellation" />
 						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-yellow-400 text-xl text-center leading-4">
 							<button
@@ -163,7 +163,7 @@ const Zodiac = () => {
 						</div>
 					</div>
 
-					<div className="relative w-48 h-48 rounded-full overflow-hidden">
+					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={libra} alt="libra constellation" />
 						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-yellow-400 text-xl text-center leading-4">
 							<button
@@ -180,7 +180,7 @@ const Zodiac = () => {
 						</div>
 					</div>
 
-					<div className="relative w-48 h-48 rounded-full overflow-hidden">
+					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={pisces} alt="pisces constellation" />
 						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-yellow-400 text-xl text-center leading-4">
 							<button
@@ -197,7 +197,7 @@ const Zodiac = () => {
 						</div>
 					</div>
 
-					<div className="relative w-48 h-48 rounded-full overflow-hidden">
+					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img
 							src={sagittarius}
 							alt="sagittarius constellation"
@@ -221,7 +221,7 @@ const Zodiac = () => {
 						</div>
 					</div>
 
-					<div className="relative w-48 h-48 rounded-full overflow-hidden">
+					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={scorpio} alt="scorpio constellation" />
 						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-yellow-400 text-xl text-center leading-4">
 							<button
@@ -238,7 +238,7 @@ const Zodiac = () => {
 						</div>
 					</div>
 
-					<div className="relative w-48 h-48 rounded-full overflow-hidden">
+					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={taurus} alt="" />
 						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-yellow-400 text-xl text-center leading-4">
 							<button
@@ -255,7 +255,7 @@ const Zodiac = () => {
 						</div>
 					</div>
 
-					<div className="relative w-48 h-48 rounded-full overflow-hidden">
+					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={virgo} alt="virgo constellation" />
 						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-yellow-400 text-xl text-center leading-4">
 							<button

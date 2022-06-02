@@ -26,17 +26,27 @@ const Navbar = () => {
 	return (
 		<>
 			<div className="bg-cover bg-zinc-50 bg-center relative w-full h-36 flex justify-between text-black items-center">
-				<div className="flex items-center">
+				<div className="flex flex-row items-start justify-center w-full md:justify-start">
 					<img
 						src={sun}
 						alt="logo"
-						className="w-24 h-24 scale-150 md:ml-20"
+						className="md:hidden m-10 w-24 h-24 scale-150 md:ml-20"
 					/>
-					<p className="md:pl-24 md:text-5xl md:visible text-xl font-anton pl-7 self-start md:self-center">
+					<img
+						src={sun}
+						alt="logo"
+						className="hidden md:block w-24 h-24 scale-150 md:ml-20"
+					/>
+					<p className="md:pl-24 md:text-5xl md:block hidden text-xl font-anton pl-7 self-start md:self-center">
 						<span className="text-yellow-500">
 							ASTROLOGICAL CALLING.
 						</span>
 					</p>
+					{/* <div className="">
+						<p className="md:pl-24 md:text-5xl md:hidden text-xl font-anton pl-5 self-start md:self-center">
+							<span className="text-yellow-500 text-3xl">AC.</span>
+						</p>
+					</div> */}
 				</div>
 
 				<nav>
