@@ -26,7 +26,7 @@ const Navbar = () => {
 	return (
 		<>
 			<div className="bg-cover bg-zinc-50 bg-center relative w-full h-36 flex justify-between text-black items-center">
-				<div className="flex flex-row items-start justify-center w-full md:justify-start">
+				<div className="flex flex-row items-start justify-start w-full md:justify-start">
 					<img
 						src={sun}
 						alt="logo"
