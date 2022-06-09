@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import bear from "../assets/bearn.png";
 import { motion } from "framer-motion";
+import CookieConsent from "react-cookie-consent";
+
+
 
 const Start = () => {
 	const buttonVariants = {
@@ -50,6 +53,11 @@ const Start = () => {
 
 	return (
 		<>
+			<CookieConsent 
+			location="bottom">
+				This Site Uses Cookies
+			</CookieConsent>
+			;
 			<section>
 				<div className="bg-cover bg-center fixed w-screen h-screen">
 					<div className="absolute w-2/3 m-auto md:bottom-[10%] left-[0%] right-[0%] justify-center items-center flex flex-col h-screen leading-4 md:text-4xl text-sm font-anton ">
