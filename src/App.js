@@ -19,7 +19,9 @@ import { apiContext } from "./components/contexts/ApiContext";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ReactGA4 from "react-ga4";
 
+ReactGA4.initialize("G-QQLW1FTYNN");
 
 function App() {
 
@@ -207,6 +209,7 @@ function App() {
 		);
 	}, []);
 
+	ReactGA4.send({ hitType: "pageview", page: window.location.pathname });
 
 	return (
 		<div>
