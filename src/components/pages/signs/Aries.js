@@ -19,7 +19,7 @@ const Aries = () => {
 			</nav>
 			<section>
 				<div className="grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center">
-					<h1 className="text-center font-anton uppercase text-8xl md:hidden text-jonquil pb-10">
+					<h1 className="text-center font-anton uppercase text-8xl md:hidden  pb-10">
 						aries
 					</h1>
 					<img
@@ -28,7 +28,7 @@ const Aries = () => {
 						className="md:pl-10 w-5/6 h-5/6 object-contain"
 					/>
 					<div className="text-sm  text-justify pl-10 pr-10">
-						<h1 className="text-center font-anton uppercase text-8xl hidden md:block text-jonquil">
+						<h1 className="text-center font-anton uppercase text-8xl hidden md:block ">
 							aries
 						</h1>
 						<span className="font-anton">Current Date:</span>{" "}

@@ -19,7 +19,7 @@ const Aquarius = () => {
 			</nav>
 			<section>
 				<div className="grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center pb-24">
-					<h1 className="text-center font-anton uppercase text-8xl md:hidden text-jonquil pb-10">
+					<h1 className="text-center font-anton uppercase text-8xl md:hidden pb-10">
 						aquarius
 					</h1>
 					<img
@@ -28,7 +28,7 @@ const Aquarius = () => {
 						className="md:pl-10 md:w-fit md:h-fit h-5/6 w-5/6 object-contain"
 					/>
 					<div className="text-sm text-justify pl-10 pr-10">
-						<h1 className="text-center font-anton uppercase md:text-8xl hidden md:block text-jonquil">
+						<h1 className="text-center font-anton uppercase md:text-8xl hidden md:block">
 							aquarius
 						</h1>
 						<span className="font-anton">Current Date:</span>{" "}
