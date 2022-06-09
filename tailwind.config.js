@@ -30,6 +30,7 @@ module.exports = {
 			// => @media (min-width: 1536px) { ... }
 		},
 		colors: {
+			jonquil: "#ebc30e",
 			moss: "#97aa52",
 			ash: "#b0cdaf",
 			pine: "#2e3424",
