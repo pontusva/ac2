@@ -19,8 +19,15 @@ import { apiContext } from "./components/contexts/ApiContext";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ReactGA from 'react-ga';
+
 
 function App() {
+
+	ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_CODE);
+	ReactGA.pageview(window.location.pathname + window.location.search);
+	console.log(process.env.REACT_APP_GA_TRACKING_CODE);
+
 	const [aqua, setAqua] = useState([]);
 	const [aquaTomorrow, setAquaTomorrow] = useState([]);
 	const [aries, setAries] = useState([]);
