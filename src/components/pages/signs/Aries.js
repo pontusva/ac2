@@ -28,7 +28,7 @@ const Aries = () => {
 						className="md:pl-10 w-5/6 h-5/6 object-contain"
 					/>
 					<div className="text-sm  text-justify pl-10 pr-10">
-						<h1 className="text-center font-anton uppercase text-8xl hidden md:block ">
+						<h1 className="text-center font-anton uppercase text-8xl hidden md:block text-amber-500">
 							aries
 						</h1>
 						<span className="font-anton">Current Date:</span>{" "}

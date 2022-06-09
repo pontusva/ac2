@@ -28,7 +28,7 @@ const Aquarius = () => {
 						className="md:pl-10 md:w-fit md:h-fit h-5/6 w-5/6 object-contain"
 					/>
 					<div className="text-sm text-justify pl-10 pr-10">
-						<h1 className="text-center font-anton uppercase md:text-8xl hidden md:block">
+						<h1 className="text-center font-anton uppercase md:text-8xl hidden md:block text-amber-500">
 							aquarius
 						</h1>
 						<span className="font-anton">Current Date:</span>{" "}

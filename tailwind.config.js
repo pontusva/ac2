@@ -12,6 +12,12 @@ module.exports = {
 				anton: ["Anton", "sans-serif"],
 				roboto: ["Roboto", "sans-serif"],
 			},
+			colors: {
+				jonquil: "#ebc30e",
+				moss: "#97aa52",
+				ash: "#b0cdaf",
+				pine: "#2e3424",
+			},
 		},
 		screens: {
 			sm: "640px",
@@ -28,12 +34,6 @@ module.exports = {
 
 			"2xl": "1536px",
 			// => @media (min-width: 1536px) { ... }
-		},
-		colors: {
-			jonquil: "#ebc30e",
-			moss: "#97aa52",
-			ash: "#b0cdaf",
-			pine: "#2e3424",
 		},
 	},
 	plugins: [],

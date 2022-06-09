@@ -61,9 +61,9 @@ const Zodiac = () => {
 							className="object-contain"
 						/>
 
-						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-jonquil text-xl text-center leading-4">
+						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
-								className="openModalBtn"
+								className="openModalBtn text-jonquil"
 								onClick={() => setAquariusModal(!false)}
 							>
 								Aquarius
@@ -78,9 +78,9 @@ const Zodiac = () => {
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={aries} alt="aries constellation" />
-						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-jonquil text-xl text-center leading-4">
+						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
-								className="openModalBtn text-jonquil"
+								className="openModalBtn  text-jonquil"
 								onClick={() => setAriesModal(!false)}
 							>
 								Aries
@@ -95,9 +95,9 @@ const Zodiac = () => {
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={cancer} alt="cancer constellation" />
-						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-jonquil text-xl text-center leading-4">
+						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
-								className="openModalBtn"
+								className="openModalBtn text-jonquil"
 								onClick={() => setCancerModal(!false)}
 							>
 								Cancer
@@ -112,9 +112,9 @@ const Zodiac = () => {
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={capricorn} alt="" />
-						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-jonquil text-xl text-center leading-4">
+						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
-								className="openModalBtn"
+								className="openModalBtn text-jonquil"
 								onClick={() =>
 									setCapricornModal(!false)
 								}
@@ -133,9 +133,9 @@ const Zodiac = () => {
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={gemini} alt="gemini constellation" />
-						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-jonquil text-xl text-center leading-4">
+						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
-								className="openModalBtn"
+								className="openModalBtn text-jonquil"
 								onClick={() => setGeminiModal(!false)}
 							>
 								Gemini
@@ -150,9 +150,9 @@ const Zodiac = () => {
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={leo} alt="leo constellation" />
-						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-jonquil text-xl text-center leading-4">
+						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
-								className="openModalBtn"
+								className="openModalBtn text-jonquil"
 								onClick={() => setLeoModal(!false)}
 							>
 								Leo
@@ -165,9 +165,9 @@ const Zodiac = () => {
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={libra} alt="libra constellation" />
-						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-jonquil text-xl text-center leading-4">
+						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
-								className="openModalBtn"
+								className="openModalBtn text-jonquil"
 								onClick={() => setLibraModal(!false)}
 							>
 								Libra
@@ -182,9 +182,9 @@ const Zodiac = () => {
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={pisces} alt="pisces constellation" />
-						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-jonquil text-xl text-center leading-4">
+						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
-								className="openModalBtn"
+								className="openModalBtn text-jonquil"
 								onClick={() => setLibraModal(!false)}
 							>
 								Pisces
@@ -202,9 +202,9 @@ const Zodiac = () => {
 							src={sagittarius}
 							alt="sagittarius constellation"
 						/>
-						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-jonquil text-xl text-center leading-4">
+						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
-								className="openModalBtn"
+								className="openModalBtn text-jonquil"
 								onClick={() =>
 									setSagittariusModal(!false)
 								}
@@ -223,9 +223,9 @@ const Zodiac = () => {
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={scorpio} alt="scorpio constellation" />
-						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-jonquil text-xl text-center leading-4">
+						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
-								className="openModalBtn"
+								className="openModalBtn text-jonquil"
 								onClick={() => setScorpioModal(!false)}
 							>
 								Scorpio
@@ -240,9 +240,9 @@ const Zodiac = () => {
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={taurus} alt="" />
-						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-jonquil text-xl text-center leading-4">
+						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
-								className="openModalBtn"
+								className="openModalBtn text-jonquil"
 								onClick={() => setTaurusModal(!false)}
 							>
 								Taurus
@@ -257,9 +257,9 @@ const Zodiac = () => {
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img src={virgo} alt="virgo constellation" />
-						<div className="absolute w-full py-5 bottom-0 inset-x-0 text-jonquil text-xl text-center leading-4">
+						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
-								className="openModalBtn"
+								className="openModalBtn text-jonquil"
 								onClick={() => setVirgoModal(!false)}
 							>
 								Virgo
