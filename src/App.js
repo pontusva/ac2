@@ -19,8 +19,7 @@ import { apiContext } from "./components/contexts/ApiContext";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ReactGA from 'react-ga';
-ReactGA.initialize('G-QQLW1FTYNN');
+
 
 function App() {
 
@@ -208,11 +207,6 @@ function App() {
 		);
 	}, []);
 
-	useEffect(() => {
-		 ReactGA.pageview(
-				window.location.pathname + window.location.search
-			);
-	}, [])
 
 	return (
 		<div>

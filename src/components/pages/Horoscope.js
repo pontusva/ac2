@@ -23,7 +23,7 @@ const Horoscope = () => {
 			</nav>
 			<section>
 				<div className="hidden text-center pt-5 w-full font-anton tracking-wide md:text-xl text-sm h-full bg-zinc-50">
-					<p>Click to read todays horoscope...</p>
+					<p>Click to read todays horoscopes...</p>
 				</div>
 				<div className="gap-x-2 z-10 bg-zinc-50  grid md:grid-cols-4 grid-cols-3 md:p-24 p-3 justify-items-center gap-8 bg-cover bg-center md:fixed w-screen h-full">
 					<div className="">
