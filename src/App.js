@@ -21,7 +21,7 @@ import axios from "axios";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactGA4 from "react-ga4";
 
-ReactGA4.initialize("G-QQLW1FTYNN");
+ReactGA4.initialize("G-WMY9BWJ9Y6");
 
 function App() {
 
