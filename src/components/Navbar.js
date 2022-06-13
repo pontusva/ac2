@@ -39,7 +39,7 @@ const Navbar = () => {
 					/>
 					<p className="md:pl-24 md:text-5xl md:block hidden text-xl font-anton pl-7 self-start md:self-center">
 						<span className="text-pine">
-							ASTROLOGICAL CALLING.
+							CELESTIAL SEER.
 						</span>
 					</p>
 					{/* <div className="">
