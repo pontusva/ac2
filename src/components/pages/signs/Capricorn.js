@@ -2,6 +2,7 @@ import { React, useContext, useState } from "react";
 import capricorn from "../../assets/zodiacSigns/Capricorn.png";
 import { apiContext } from "../../contexts/ApiContext";
 import Navbar from "../../Navbar";
+import {motion} from 'framer-motion';
 
 const Capricorn = () => {
 	const { capricornSign, capricornTomorrow } = useContext(apiContext);
@@ -15,7 +16,11 @@ const Capricorn = () => {
 	return (
 		<>
 			<Navbar />
-			<div className="grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center  ">
+			<motion.div 
+			initial={{opacity: 0}}
+			animate={{opacity: 1}}
+			exit={{opacity: 0}}
+			className="grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center  ">
 				<h1 className="text-center font-anton uppercase text-7xl md:hidden pb-10">
 					capricorn
 				</h1>
@@ -86,7 +91,7 @@ const Capricorn = () => {
 						{capricornTomorrow.description} <br />
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 };

@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { apiContext } from "../../contexts/ApiContext";
 import Navbar from "../../Navbar";
 import aquarius from "../../assets/zodiacSigns/Aquarius.png";
-
+import {motion} from 'framer-motion';
 const Aquarius = () => {
 	const { aqua, aquaTomorrow } = useContext(apiContext);
 
@@ -18,7 +18,11 @@ const Aquarius = () => {
 				<Navbar />
 			</nav>
 			<section>
-				<div className="grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center pb-24">
+				<motion.div 
+				initial={{opacity: 0}}
+				animate={{opacity: 1}}
+				exit={{opacity: 0}}
+				className="grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center pb-24">
 					<h1 className="text-center font-anton uppercase text-8xl md:hidden pb-10">
 						aquarius
 					</h1>
@@ -106,7 +110,7 @@ const Aquarius = () => {
 							{aquaTomorrow.description} <br />
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			</section>
 		</>
 	);

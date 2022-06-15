@@ -25,6 +25,7 @@ import sagittarius from "../assets/zodiac/sagittarius.png";
 import scorpio from "../assets/zodiac/scorpio.png";
 import taurus from "../assets/zodiac/taurus.png";
 import virgo from "../assets/zodiac/virgo.png";
+import {motion} from 'framer-motion';
 
 
 
@@ -53,7 +54,11 @@ const Zodiac = () => {
 			</div>
 
 			<section className="h-[100%] bg-zinc-50">
-				<div className="md:gap-x-8 z-10 bg-zinc-50 grid md:grid-cols-3 grid-cols-2 md:pb-24 md:p-24 md:pt-24 pt-5 justify-items-center md:gap-8 w-full h-[100%] text-center font-anton text-4xl text-yellow-400">
+				<motion.div
+				initial={{opacity: 0}}
+				animate={{opacity: 1}}
+				exit={{opacity: 0}}
+				 className="md:gap-x-8 z-10 bg-zinc-50 grid md:grid-cols-3 grid-cols-2 md:pb-24 md:p-24 md:pt-24 pt-5 justify-items-center md:gap-8 w-full h-[100%] text-center font-anton text-4xl text-yellow-400">
 					<div className="relative md:w-48 md:h-48 w-36 h-36  rounded-full overflow-hidden">
 						<img
 							src={aquarius}
@@ -271,7 +276,7 @@ const Zodiac = () => {
 							)}
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			</section>
 		</>
 	);

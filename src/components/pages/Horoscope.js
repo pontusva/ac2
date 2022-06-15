@@ -12,6 +12,7 @@ import scorpius from "../assets/zodiacSigns/Scorpius.png";
 import virgo from "../assets/zodiacSigns/Virgo.png";
 import pisces from "../assets/zodiacSigns/Pisces.png";
 import { Link } from "react-router-dom";
+import {motion} from 'framer-motion';
 
 import Navbar from "../Navbar";
 
@@ -25,7 +26,11 @@ const Horoscope = () => {
 				<div className="hidden text-center pt-5 w-full font-anton tracking-wide md:text-xl text-sm h-full bg-zinc-50">
 					<p>Click to read todays horoscopes...</p>
 				</div>
-				<div className="gap-x-2 z-10 bg-zinc-50  grid md:grid-cols-4 grid-cols-3 md:p-24 p-3 justify-items-center gap-8 bg-cover bg-center md:fixed w-screen h-full">
+				<motion.div
+				initial={{opacity: 0}}
+				animate={{opacity: 1}}
+				exit={{opacity: 0}}
+				 className="gap-x-2 z-10 bg-zinc-50  grid md:grid-cols-4 grid-cols-3 md:p-24 p-3 justify-items-center gap-8 bg-cover bg-center md:fixed w-screen h-full">
 					<div className="">
 						<p className=" text-center font-bold text-xl text-sky-700">
 							Aquarius
@@ -181,7 +186,7 @@ const Horoscope = () => {
 							/>
 						</Link>
 					</div>
-				</div>
+				</motion.div>
 			</section>
 		</>
 	);

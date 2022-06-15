@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar";
 import bear from "../assets/bear.png";
+import {motion} from 'framer-motion';
 
 const Home = () => {
 	return (
@@ -9,7 +10,11 @@ const Home = () => {
 				<Navbar />
 			</nav>
 			<section>
-				<div className="bg-zinc-50 flex md:flex-row flex-col md:w-full w-full justify-center text-justify md:space-x-36 md:fixed md:h-full h-screen pt-36">
+				<motion.div 
+				initial={{opacity: 0}}
+				animate={{opacity: 1}}
+				exit={{opacity: 0}}
+				className="bg-zinc-50 flex md:flex-row flex-col md:w-full w-full justify-center text-justify md:space-x-36 md:fixed md:h-full h-screen pt-36">
 					<div className="bg-zinc-50">
 						<img
 							src={bear}
@@ -43,7 +48,7 @@ const Home = () => {
 							― Marilyn Monroe
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			</section>
 		</>
 	);

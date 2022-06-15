@@ -2,6 +2,7 @@ import { React, useContext, useState } from "react";
 import { apiContext } from "../../contexts/ApiContext";
 import Navbar from "../../Navbar";
 import ariespic from "../../assets/zodiacSigns/Aries.png";
+import {motion} from 'framer-motion';
 
 const Aries = () => {
 	const { aries, ariesTomorrow } = useContext(apiContext);
@@ -18,7 +19,11 @@ const Aries = () => {
 				<Navbar />
 			</nav>
 			<section>
-				<div className="grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center">
+				<motion.div 
+                initial={{opacity: 0}}
+				animate={{opacity: 1}}
+				exit={{opacity: 0}}
+                className="grid md:grid-cols-2 grid-cols-1 justify-items-center bg-zinc-50  md:h-screen h-full w-full content-center">
 					<h1 className="text-center font-anton uppercase text-8xl md:hidden  pb-10">
 						aries
 					</h1>
@@ -106,7 +111,7 @@ const Aries = () => {
 							{ariesTomorrow.description} <br />
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			</section>
 		</>
 	);

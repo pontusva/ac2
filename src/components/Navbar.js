@@ -17,9 +17,18 @@ const Navbar = () => {
 		hover: {
 			scale: 1.5,
 			boxShadow: "0px 0px 8px rgba(255, 255, 255)",
+			transition: {
+				type: "tween", 
+				stiffness: 50 
+			}
+			
 		},
 		tap: {
 			scale: 0.1,
+			transition: {
+				type: "tween", 
+				stiffness: 50 
+			}
 		},
 	};
 
