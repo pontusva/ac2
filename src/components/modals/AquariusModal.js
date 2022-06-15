@@ -9,7 +9,7 @@ const Modal = ({ closeModal }) => {
         <>
             <motion.div
                 onTap={() => setVisible(!isVisible)}
-                onClick={() => closeModal(true)}
+                onClick={() => closeModal(false)}
                 className='modalBackground z-10 text-black w-full h-screen fixed left-0 right-0 bottom-0 items-center flex justify-center bg-black/50 backdrop-blur-xl text-sm md:text-lg md:px-0 px-10'
             >
                 <AnimatePresence>
