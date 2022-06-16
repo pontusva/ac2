@@ -15,34 +15,34 @@ import Sagittarius from "../components/pages/signs/Sagittarius";
 import Scorpio from "../components/pages/signs/Scorpio";
 import Taurus from "../components/pages/signs/Taurus";
 import Virgo from "../components/pages/signs/Virgo";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
 import React from "react";
 
 const AnimatedRoutes = () => {
     const location = useLocation();
     return (
-        <AnimatePresence>
-            <Routes location={location}>
-                <Route path='/' element={<Start />} />
-                <Route path='/home' element={<Home />} />
-                <Route path='/horoscope' element={<Horoscope />} />
-                <Route path='/about' element={<About />} />
-                <Route path='/zodiac' element={<Zodiac />} />
-                <Route path='/aquarius' element={<Aquarius />} />
-                <Route path='/aries' element={<Aries />} />
-                <Route path='/cancer' element={<Cancer />} />
-                <Route path='/capricorn' element={<Capricorn />} />
-                <Route path='/gemini' element={<Gemini />} />
-                <Route path='/leo' element={<Leo />} />
-                <Route path='/libra' element={<Libra />} />
-                <Route path='/pisces' element={<Pisces />} />
-                <Route path='/sagittarius' element={<Sagittarius />} />
-                <Route path='/scorpio' element={<Scorpio />} />
-                <Route path='/taurus' element={<Taurus />} />
-                <Route path='/virgo' element={<Virgo />} />
-            </Routes>
-        </AnimatePresence>
+		<AnimatePresence>
+			<Routes location={location} >
+				<Route path="/" element={<Start />} />
+				<Route path="/home" element={<Home />} />
+				<Route path="/horoscope" element={<Horoscope />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/zodiac" element={<Zodiac />} />
+				<Route path="/aquarius" element={<Aquarius />} />
+				<Route path="/aries" element={<Aries />} />
+				<Route path="/cancer" element={<Cancer />} />
+				<Route path="/capricorn" element={<Capricorn />} />
+				<Route path="/gemini" element={<Gemini />} />
+				<Route path="/leo" element={<Leo />} />
+				<Route path="/libra" element={<Libra />} />
+				<Route path="/pisces" element={<Pisces />} />
+				<Route path="/sagittarius" element={<Sagittarius />} />
+				<Route path="/scorpio" element={<Scorpio />} />
+				<Route path="/taurus" element={<Taurus />} />
+				<Route path="/virgo" element={<Virgo />} />
+			</Routes>
+		</AnimatePresence>
     );
 };
 

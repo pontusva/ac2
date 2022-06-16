@@ -25,7 +25,7 @@ import sagittarius from "../assets/zodiac/sagittarius.png";
 import scorpio from "../assets/zodiac/scorpio.png";
 import taurus from "../assets/zodiac/taurus.png";
 import virgo from "../assets/zodiac/virgo.png";
-import {motion} from 'framer-motion';
+import {motion, AnimatePresence} from 'framer-motion';
 
 
 
@@ -55,15 +55,16 @@ const Zodiac = () => {
 
 			<section className="h-[100%] bg-zinc-50">
 				<motion.div
-				initial={{opacity: 0}}
-				animate={{opacity: 1}}
-				exit={{opacity: 0}}
-				 className="md:gap-x-8 z-10 bg-zinc-50 grid md:grid-cols-3 grid-cols-2 md:pb-24 md:p-24 md:pt-24 pt-5 justify-items-center md:gap-8 w-full h-[100%] text-center font-anton text-4xl text-yellow-400">
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					className="md:gap-x-8 z-10 bg-zinc-50 grid md:grid-cols-3 grid-cols-2 md:pb-24 md:p-24 md:pt-24 pt-5 justify-items-center md:gap-8 w-full h-[100%] text-center font-anton text-4xl text-yellow-400"
+				>
 					<div className="relative md:w-48 md:h-48 w-36 h-36  rounded-full overflow-hidden">
 						<img
 							src={aquarius}
 							alt="aquarius constellation"
-							className="object-contain"
+							className="object-contain cursor-pointer"
+							onClick={() => setAquariusModal(!false)}
 						/>
 
 						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
@@ -73,16 +74,23 @@ const Zodiac = () => {
 							>
 								Aquarius
 							</button>
-							{aquariusModal && (
-								<AquariusModal
-									closeModal={setAquariusModal}
-								/>
-							)}
+							<AnimatePresence>
+								{aquariusModal && (
+									<AquariusModal
+										closeModal={setAquariusModal}
+									/>
+								)}
+							</AnimatePresence>
 						</div>
 					</div>
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
-						<img src={aries} alt="aries constellation" />
+						<img
+							src={aries}
+							className="object-contain cursor-pointer"
+							onClick={() => setAquariusModal(!false)}
+							alt="aries constellation"
+						/>
 						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
 								className="openModalBtn  text-jonquil"
@@ -90,16 +98,25 @@ const Zodiac = () => {
 							>
 								Aries
 							</button>
-							{ariesModal && (
-								<AriesModal
-									closeModalAries={setAriesModal}
-								/>
-							)}
+							<AnimatePresence>
+								{ariesModal && (
+									<AriesModal
+										closeModalAries={
+											setAriesModal
+										}
+									/>
+								)}
+							</AnimatePresence>
 						</div>
 					</div>
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
-						<img src={cancer} alt="cancer constellation" />
+						<img
+							src={cancer}
+							className="object-contain cursor-pointer"
+							onClick={() => setAquariusModal(!false)}
+							alt="cancer constellation"
+						/>
 						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
 								className="openModalBtn text-jonquil"
@@ -107,16 +124,25 @@ const Zodiac = () => {
 							>
 								Cancer
 							</button>
-							{cancerModal && (
-								<CancerModal
-									closeModalCancer={setCancerModal}
-								/>
-							)}
+							<AnimatePresence>
+								{cancerModal && (
+									<CancerModal
+										closeModalCancer={
+											setCancerModal
+										}
+									/>
+								)}
+							</AnimatePresence>
 						</div>
 					</div>
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
-						<img src={capricorn} alt="" />
+						<img
+							className="object-contain cursor-pointer"
+							onClick={() => setAquariusModal(!false)}
+							src={capricorn}
+							alt=""
+						/>
 						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
 								className="openModalBtn text-jonquil"
@@ -126,18 +152,25 @@ const Zodiac = () => {
 							>
 								Capricorn
 							</button>
-							{capricornModal && (
-								<CapricornModal
-									closeModalCapricorn={
-										setCapricornModal
-									}
-								/>
-							)}
+							<AnimatePresence>
+								{capricornModal && (
+									<CapricornModal
+										closeModalCapricorn={
+											setCapricornModal
+										}
+									/>
+								)}
+							</AnimatePresence>
 						</div>
 					</div>
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
-						<img src={gemini} alt="gemini constellation" />
+						<img
+							className="object-contain cursor-pointer"
+							onClick={() => setAquariusModal(!false)}
+							src={gemini}
+							alt="gemini constellation"
+						/>
 						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
 								className="openModalBtn text-jonquil"
@@ -145,16 +178,25 @@ const Zodiac = () => {
 							>
 								Gemini
 							</button>
-							{geminiModal && (
-								<GeminiModal
-									closeModalGemini={setGeminiModal}
-								/>
-							)}
+							<AnimatePresence>
+								{geminiModal && (
+									<GeminiModal
+										closeModalGemini={
+											setGeminiModal
+										}
+									/>
+								)}
+							</AnimatePresence>
 						</div>
 					</div>
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
-						<img src={leo} alt="leo constellation" />
+						<img
+							className="object-contain cursor-pointer"
+							onClick={() => setAquariusModal(!false)}
+							src={leo}
+							alt="leo constellation"
+						/>
 						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
 								className="openModalBtn text-jonquil"
@@ -162,14 +204,23 @@ const Zodiac = () => {
 							>
 								Leo
 							</button>
-							{leoModal && (
-								<LeoModal closeModalLeo={setLeoModal} />
-							)}
+							<AnimatePresence>
+								{leoModal && (
+									<LeoModal
+										closeModalLeo={setLeoModal}
+									/>
+								)}
+							</AnimatePresence>
 						</div>
 					</div>
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
-						<img src={libra} alt="libra constellation" />
+						<img
+							className="object-contain cursor-pointer"
+							onClick={() => setAquariusModal(!false)}
+							src={libra}
+							alt="libra constellation"
+						/>
 						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
 								className="openModalBtn text-jonquil"
@@ -177,16 +228,25 @@ const Zodiac = () => {
 							>
 								Libra
 							</button>
-							{libraModal && (
-								<LibraModal
-									closeModalLibra={setLibraModal}
-								/>
-							)}
+							<AnimatePresence>
+								{libraModal && (
+									<LibraModal
+										closeModalLibra={
+											setLibraModal
+										}
+									/>
+								)}
+							</AnimatePresence>
 						</div>
 					</div>
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
-						<img src={pisces} alt="pisces constellation" />
+						<img
+							className="object-contain cursor-pointer"
+							onClick={() => setAquariusModal(!false)}
+							src={pisces}
+							alt="pisces constellation"
+						/>
 						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
 								className="openModalBtn text-jonquil"
@@ -194,16 +254,22 @@ const Zodiac = () => {
 							>
 								Pisces
 							</button>
-							{piscesModal && (
-								<PiscesModal
-									closeModalPisces={setPiscesModal}
-								/>
-							)}
+							<AnimatePresence>
+								{piscesModal && (
+									<PiscesModal
+										closeModalPisces={
+											setPiscesModal
+										}
+									/>
+								)}
+							</AnimatePresence>
 						</div>
 					</div>
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
 						<img
+							className="object-contain cursor-pointer"
+							onClick={() => setAquariusModal(!false)}
 							src={sagittarius}
 							alt="sagittarius constellation"
 						/>
@@ -216,18 +282,25 @@ const Zodiac = () => {
 							>
 								Sagittarius
 							</button>
-							{sagittariusModal && (
-								<SagittariusModal
-									closeModalSagittarius={
-										setSagittariusModal
-									}
-								/>
-							)}
+							<AnimatePresence>
+								{sagittariusModal && (
+									<SagittariusModal
+										closeModalSagittarius={
+											setSagittariusModal
+										}
+									/>
+								)}
+							</AnimatePresence>
 						</div>
 					</div>
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
-						<img src={scorpio} alt="scorpio constellation" />
+						<img
+							className="object-contain cursor-pointer"
+							onClick={() => setAquariusModal(!false)}
+							src={scorpio}
+							alt="scorpio constellation"
+						/>
 						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
 								className="openModalBtn text-jonquil"
@@ -235,16 +308,25 @@ const Zodiac = () => {
 							>
 								Scorpio
 							</button>
-							{scorpioModal && (
-								<ScorpioModal
-									closeModalScorpio={setScorpioModal}
-								/>
-							)}
+							<AnimatePresence>
+								{scorpioModal && (
+									<ScorpioModal
+										closeModalScorpio={
+											setScorpioModal
+										}
+									/>
+								)}
+							</AnimatePresence>
 						</div>
 					</div>
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
-						<img src={taurus} alt="" />
+						<img
+							className="object-contain cursor-pointer"
+							onClick={() => setAquariusModal(!false)}
+							src={taurus}
+							alt=""
+						/>
 						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
 								className="openModalBtn text-jonquil"
@@ -252,16 +334,25 @@ const Zodiac = () => {
 							>
 								Taurus
 							</button>
-							{taurusModal && (
-								<TaurusModal
-									closeModalTaurus={setTaurusModal}
-								/>
-							)}
+							<AnimatePresence>
+								{taurusModal && (
+									<TaurusModal
+										closeModalTaurus={
+											setTaurusModal
+										}
+									/>
+								)}
+							</AnimatePresence>
 						</div>
 					</div>
 
 					<div className="relative md:w-48 md:h-48 w-36 h-36 rounded-full overflow-hidden">
-						<img src={virgo} alt="virgo constellation" />
+						<img
+							className="object-contain cursor-pointer"
+							onClick={() => setAquariusModal(!false)}
+							src={virgo}
+							alt="virgo constellation"
+						/>
 						<div className="absolute w-full py-5 bottom-0 inset-x-0  text-xl text-center leading-4">
 							<button
 								className="openModalBtn text-jonquil"
@@ -269,11 +360,15 @@ const Zodiac = () => {
 							>
 								Virgo
 							</button>
-							{virgoModal && (
-								<VirgoModal
-									closeModalVirgo={setVirgoModal}
-								/>
-							)}
+							<AnimatePresence>
+								{virgoModal && (
+									<VirgoModal
+										closeModalVirgo={
+											setVirgoModal
+										}
+									/>
+								)}
+							</AnimatePresence>
 						</div>
 					</div>
 				</motion.div>

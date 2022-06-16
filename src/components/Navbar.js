@@ -34,7 +34,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className="bg-cover bg-zinc-50 bg-center relative w-full h-36 flex justify-between text-black items-center">
+			<div className="bg-cover bg-zinc-50 bg-center relative w-full h-36 flex justify-between text-pine items-center">
 				<div className="flex flex-row items-start justify-start w-full md:justify-start">
 					<img
 						src={sun}
@@ -48,7 +48,7 @@ const Navbar = () => {
 					/>
 					<p className="md:pl-24 md:text-5xl md:block hidden text-xl font-anton pl-7 self-start md:self-center">
 						<span className="text-pine">
-							CELESTIAL:SEER
+							ASTROLOGICAL CALLING.
 						</span>
 					</p>
 					{/* <div className="">
