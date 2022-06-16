@@ -15,6 +15,7 @@ import Sagittarius from "../components/pages/signs/Sagittarius";
 import Scorpio from "../components/pages/signs/Scorpio";
 import Taurus from "../components/pages/signs/Taurus";
 import Virgo from "../components/pages/signs/Virgo";
+import Tarot from "./pages/Tarot";
 import { AnimatePresence } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
 import React from "react";
@@ -29,6 +30,7 @@ const AnimatedRoutes = () => {
 				<Route path="/horoscope" element={<Horoscope />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/zodiac" element={<Zodiac />} />
+				<Route path="/tarot" element={<Tarot />} />
 				<Route path="/aquarius" element={<Aquarius />} />
 				<Route path="/aries" element={<Aries />} />
 				<Route path="/cancer" element={<Cancer />} />

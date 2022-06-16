@@ -94,6 +94,15 @@ const Navbar = () => {
 								Zodiac
 							</motion.li>
 						</Link>
+						<Link to="/tarot">
+							<motion.li
+								variants={linkVariants}
+								whileHover="hover"
+								whileTap="tap"
+							>
+								Tarot
+							</motion.li>
+						</Link>
 						<Link to="/about">
 							<motion.li
 								variants={linkVariants}
