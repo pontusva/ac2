@@ -12,7 +12,7 @@ const About = () => {
 			<motion.section className="h-screen bg-zinc-50"
 			initial={{opacity: 0}}
 			animate={{opacity: 1}}
-			exit={{opacity: 0}}
+			transition={{duration: 1}}
 			>
 				<div className="bg-zinc-50 flex md:flex-row flex-col md:w-full w-full justify-center text-justify md:space-x-36 pt-36">
 					<div className="md:w-96 h-96 w-full text-sm lg:text-sm md:px-3 p-5 bg-zinc-50 font-roboto">

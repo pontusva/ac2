@@ -59,7 +59,10 @@ const Start = () => {
 			</CookieConsent>
 			;
 			<section>
-				<div className="bg-cover bg-center fixed w-screen h-screen">
+				<motion.div 
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				className="bg-cover bg-center fixed w-screen h-screen">
 					<div className="absolute w-2/3 m-auto md:bottom-[10%] left-[0%] right-[0%] justify-center items-center flex flex-col h-screen leading-4 md:text-4xl text-sm font-anton ">
 						<motion.img
 							src={bear}
@@ -100,7 +103,7 @@ const Start = () => {
 							</Link>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			</section>
 		</>
 	);

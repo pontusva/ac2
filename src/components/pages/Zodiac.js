@@ -57,6 +57,7 @@ const Zodiac = () => {
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
+					transition={{duration: 1}}
 					className="md:gap-x-8 z-10 bg-zinc-50 grid md:grid-cols-3 grid-cols-2 md:pb-24 md:p-24 md:pt-24 pt-5 justify-items-center md:gap-8 w-full h-[100%] text-center font-anton text-4xl text-yellow-400"
 				>
 					<div className="relative md:w-48 md:h-48 w-36 h-36  rounded-full overflow-hidden">

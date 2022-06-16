@@ -9,11 +9,11 @@ const Home = () => {
 			<nav>
 				<Navbar />
 			</nav>
-			<section>
+			<section className=' h-[100%] bg-zinc-50'>
 				<motion.div 
 				initial={{opacity: 0}}
-				animate={{opacity: 1}}
-				exit={{opacity: 0}}
+				animate={{opacity: [0,1]}}
+				transition={{duration: 1}}
 				className="bg-zinc-50 flex md:flex-row flex-col md:w-full w-full justify-center text-justify md:space-x-36 md:fixed md:h-full h-screen pt-36">
 					<div className="bg-zinc-50">
 						<img
