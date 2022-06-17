@@ -13,7 +13,7 @@ const LightMeaning = ({ show, update }) => {
 	return (
 		<>
 			<div className=" h-screen bg-slate-50 items-start flex justify-around ">
-				<div className="" key="light">
+				<div  key="light">
 					<AnimatePresence>
 						{show && (
 							<motion.button
