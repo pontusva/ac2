@@ -20,11 +20,12 @@ import { AnimatePresence } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
 import React from "react";
 
+
 const AnimatedRoutes = () => {
     const location = useLocation();
     return (
 		<AnimatePresence>
-			<Routes location={location} >
+			<Routes location={location}>
 				<Route path="/" element={<Start />} />
 				<Route path="/home" element={<Home />} />
 				<Route path="/horoscope" element={<Horoscope />} />
