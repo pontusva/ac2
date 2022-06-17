@@ -12,7 +12,7 @@ const ReversedTarot = ({ cardDraw, show }) => {
                                 inital={{ opacity: 0 }}
                                 animate={{ opacity: [0, 1] }}
                                 exit={{ opacity: 0 }}
-                                className='text-3xl font-anton uppercase underline'
+                                className='text-3xl font-anton uppercase underline pb-5'
                             >
                                 Reversed
                             </motion.p>

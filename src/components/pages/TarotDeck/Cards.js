@@ -11,13 +11,16 @@ import ReversedTarot from "./ReversedTarot";
 const Cards = () => {
     const [cardDraw, setCardDraw] = useState([]);
     const [show, setShow] = useState(false);
+    const [disable, setDisable] = useState(false);
 
     const update = () => {
         setCardDraw(drawCard());
         setShow(!show);
+        setDisable(true);
+        setTimeout(() => {
+            setDisable(false);
+        }, 3500);
     };
-
-    console.log(cardDraw);
 
     useEffect(() => {
         setCardDraw(drawCard());
@@ -28,19 +31,25 @@ const Cards = () => {
     }
     return (
         <>
-            <div className='h-screen bg-zinc-50 grid grid-cols-1 content-center pb-24'>
+            <div className='h-screen bg-zinc-50 grid grid-cols-1 content-center pb-44'>
                 <div className='bg-zinc-50'>
                     <div className='flex justify-center mb-5'>
                         <motion.div
-                            key='button'
-                            // whileTap={{ scale: 0.8 }}
-                            onClick={update}
-                            className='text-jonquil text-4xl text-center'
+                            whileTap={{ scale: 0.8 }}
+                            className='text-moss font-bold text-7xl text-center'
                         >
                             {show ? (
-                                <CloseButtonAnimation />
+                                <CloseButtonAnimation
+                                    update={update}
+                                    disable={disable}
+                                    show={show}
+                                />
                             ) : (
-                                <DrawButtonAnimation />
+                                <DrawButtonAnimation
+                                    update={update}
+                                    disable={disable}
+                                    show={show}
+                                />
                             )}
                         </motion.div>
                     </div>
