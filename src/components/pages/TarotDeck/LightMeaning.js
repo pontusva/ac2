@@ -3,8 +3,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { drawCard, drawReading } from "tarot-deck";
 import Light from './Light';
+import Dark from './Dark';
 
-const LightMeaning = ({ show, update }) => {
+const LightMeaning = ({ show, cardDraw }) => {
 	const light = "Light";
 	const shadow = "Shadow";
 	// if (cardDraw.length === 0) {
@@ -12,12 +13,13 @@ const LightMeaning = ({ show, update }) => {
 	// }
 	return (
 		<>
-			<div className=" h-screen bg-slate-50 items-start flex justify-around ">
-				<div  key="light">
+			<div className=" h-screen w-screen bg-slate-50 items-start flex justify-around ">
+				<div className='flex flex-col'
+				  key="light">
 					<AnimatePresence>
 						{show && (
 							<motion.button
-								className="text-8xl"
+								className="text-5xl font-anton underline uppercase"
 								inital={{ opacity: 0 }}
 								animate={{ opacity: [0, 1] }}
 								exit={{ opacity: 0 }}
@@ -26,14 +28,17 @@ const LightMeaning = ({ show, update }) => {
 							</motion.button>
 						)}
 					</AnimatePresence>
+					<Light show={show} cardDraw={cardDraw}/>
 				</div>
 
-				<div>
+				<div
+				className='flex flex-col'
+				>
 					<AnimatePresence>
 						{show && (
 							<motion.button
 								key="shadowButton"
-								className="text-8xl"
+								className="text-5xl font-anton underline uppercase"
 								inital={{ opacity: 0 }}
 								animate={{ opacity: [0, 1] }}
 								exit={{ opacity: 0 }}
@@ -42,7 +47,8 @@ const LightMeaning = ({ show, update }) => {
 							</motion.button>
 						)}
 					</AnimatePresence>
-					<Light show={show} />
+					<Dark show={show} cardDraw={cardDraw}/>
+					
 				</div>
 			</div>
 		</>
