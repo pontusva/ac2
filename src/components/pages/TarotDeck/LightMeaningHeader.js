@@ -11,7 +11,7 @@ const LightMeaningHeader = ({ show, cardDraw }) => {
                             <motion.h1
                                 inital={{ opacity: 0 }}
                                 animate={{ opacity: [0,1], scale: [0.75, 1] }}
-                                transition={{delay: 0.3, duration: 1.5}}
+                                transition={{ duration: 1}}
                                 exit={{ opacity: 0 }}
                             >
                                 {cardDraw.name}

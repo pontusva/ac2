@@ -1,7 +1,5 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState, useEffect } from "react";
-import { drawCard, drawReading } from "tarot-deck";
 import Light from './Light';
 import Dark from './Dark';
 
@@ -13,7 +11,7 @@ const LightMeaning = ({ show, cardDraw }) => {
 	// }
 	return (
 		<>
-			<div className=" h-screen w-screen bg-slate-50 items-start flex justify-around ">
+			<div className="w-screen bg-slate-50 items-start flex justify-around ">
 				<div className='flex flex-col'
 				  key="light">
 					<AnimatePresence>

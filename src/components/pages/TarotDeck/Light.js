@@ -1,7 +1,6 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState, useEffect } from "react";
-import { drawCard, drawReading } from "tarot-deck";
+
 
 const Light = ({ show, cardDraw }) => {
     if (cardDraw.length === 0) {
@@ -24,7 +23,7 @@ const Light = ({ show, cardDraw }) => {
                                             <div key={index}>
                                                 <ul>
                                                     <motion.li
-                                                        className='flex flex-col text-center jusitify-center max-w-10'
+                                                        className='flex flex-col text-center jusitify-center'
                                                         initial={{
                                                             opacity: 0,
                                                             scale: 0.75,

@@ -1,7 +1,6 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState, useEffect } from "react";
-import { drawCard, drawReading } from "tarot-deck";
+
 
 const Dark = ({ show, cardDraw }) => {
     if (cardDraw.length === 0) {
