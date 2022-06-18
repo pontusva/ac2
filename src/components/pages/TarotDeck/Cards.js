@@ -7,6 +7,7 @@ import LightMeaningHeader from "./LightMeaningHeader";
 import CloseButtonAnimation from "./CloseButtonAnimation";
 import DrawButtonAnimation from "./DrawButtonAnimation";
 import ReversedTarot from "./ReversedTarot";
+import ToReading from "./ToReading";
 
 const Cards = () => {
     const [cardDraw, setCardDraw] = useState([]);
@@ -31,12 +32,12 @@ const Cards = () => {
     }
     return (
         <>
-            <div className='h-screen bg-zinc-50 grid grid-cols-1 content-center pb-44'>
+            <div className='h-screen bg-zinc-50 grid grid-cols-1 content-center lg:pb-44 lg:pt:0 pt-12'>
                 <div className='bg-zinc-50'>
                     <div className='flex justify-center mb-5'>
                         <motion.div
                             whileTap={{ scale: 0.8 }}
-                            className='text-moss font-bold text-7xl text-center'
+                            className='text-moss font-bold text-7xl text-center lg:absolute md:top-1 md:pt-44'
                         >
                             {show ? (
                                 <CloseButtonAnimation
@@ -108,6 +109,7 @@ const Cards = () => {
                         <ReversedTarot cardDraw={cardDraw} show={show} />
                     </div>
                 </div>
+                <ToReading show={show} />
             </div>
         </>
     );
