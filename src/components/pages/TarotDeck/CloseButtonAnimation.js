@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const CloseButtonAnimation = ({ update, disable, show }) => {
+const CloseButtonAnimation = ({ update, disable}) => {
 
     return (
         <>

@@ -35,7 +35,7 @@ const Cards = () => {
             <div className='h-screen bg-zinc-50 grid grid-cols-1 content-center lg:pb-44 lg:pt:0 pt-12'>
                 <div className='bg-zinc-50'>
                     <div className='flex justify-center mb-5'>
-                        <motion.div
+                        <motion.button
                             whileTap={{ scale: 0.8 }}
                             className='text-moss font-bold text-7xl text-center lg:absolute md:top-1 md:pt-44'
                         >
@@ -52,7 +52,7 @@ const Cards = () => {
                                     show={show}
                                 />
                             )}
-                        </motion.div>
+                        </motion.button>
                     </div>
 
                     <div className='flex justify-center'>

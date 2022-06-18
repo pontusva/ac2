@@ -33,7 +33,7 @@ const AnimatedRoutes = () => {
 				<Route path="/about" element={<About />} />
 				<Route path="/zodiac" element={<Zodiac />} />
 				<Route path="/tarot" element={<Tarot />} />
-				<Route path="/tarot/:reading" element={<Reading />} />
+				<Route path="/tarot/reading" element={<Reading />} />
 				<Route path="/aquarius" element={<Aquarius />} />
 				<Route path="/aries" element={<Aries />} />
 				<Route path="/cancer" element={<Cancer />} />
