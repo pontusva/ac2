@@ -4,31 +4,37 @@ import ShadowReading from "../LightAndShadow/ShadowReading";
 import FortuneTellingCardOne from "./FortuneTelling/FortuneTellingCardOne";
 import ReversedOne from "./ReveresReading/ReversedOne";
 import KeywordsOne from "./Keywords/KeywordsOne";
-import { motion, AnimatePresence } from "framer-motion";
+import {motion} from "framer-motion";
 
-const FirstCard = ({ reading }) => {
+const FirstCard = ({ reading, show }) => {
     return (
         <>
-            <div>
-                <AnimatePresence>
-                    <motion.div
-                        intital={{ scale: 0 }}
-                        animate={{ opacity: [0, 1] }}
-                        exit={{ opacity: 0 }}
-                    >
-                        <motion.p
-                            intital={{ scale: 0 }}
-                            animate={{ opacity: [0, 1] }}
-                            exit={{ opacity: 0 }}
-                            className='text-center font-anton text-5xl underline uppercase'
-                        >
-                            {reading[0].name}
-                        </motion.p>
-                    </motion.div>
-                </AnimatePresence>
-                <FortuneTellingCardOne reading={reading} />
+            <motion.div
+                initial={{
+                    opacity: 0,
+                    scale: 0.75,
+                }}
+                animate={{
+                    opacity: 1,
+                    scale: 1,
+                }}
+                transition={{
+                    duration: 1,
+                }}
+                exit={{
+                    opacity: 0,
+                    scale: 0,
+                }}
+            >
+                <motion.div>
+                    <motion.p className='text-center font-anton text-5xl underline uppercase'>
+                        {reading[0].name}
+                    </motion.p>
+                </motion.div>
+
+                <FortuneTellingCardOne reading={reading} show={show} />
                 <div>
-                    <ReversedOne reading={reading} />
+                    <ReversedOne reading={reading} show={show} />
                 </div>
                 <div>
                     <LightReading reading={reading} />
@@ -39,7 +45,7 @@ const FirstCard = ({ reading }) => {
                 <div>
                     <KeywordsOne reading={reading} />
                 </div>
-            </div>
+            </motion.div>
         </>
     );
 };

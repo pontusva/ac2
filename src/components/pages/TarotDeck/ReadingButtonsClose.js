@@ -1,21 +1,18 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const ReadingButtonsClose = ({ close }) => {
+const ReadingButtonsClose = ({ updateReading }) => {
     return (
         <>
             <div>
-                <AnimatePresence>
-                    <motion.button
-                        inital={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 3 }}
-                        onClick={close}
-                    >
-                        Close
-                    </motion.button>
-                </AnimatePresence>
+                <motion.button
+                    inital={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 3 }}
+                    onClick={updateReading}
+                >
+                    Close
+                </motion.button>
             </div>
         </>
     );

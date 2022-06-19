@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { drawCard, drawReading } from "tarot-deck";
+import { drawCard } from "tarot-deck";
 import LightMeaning from "./LightMeaning";
 import LightMeaningHeader from "./LightMeaningHeader";
 import CloseButtonAnimation from "./CloseButtonAnimation";
@@ -35,8 +35,7 @@ const Cards = () => {
             <div className='h-screen bg-zinc-50 grid grid-cols-1 content-center lg:pb-44 lg:pt:0 pt-12'>
                 <div className='bg-zinc-50'>
                     <div className='flex justify-center mb-5'>
-                        <motion.button
-                            whileTap={{ scale: 0.8 }}
+                        <motion.div
                             className='text-moss font-bold text-7xl text-center lg:absolute md:top-1 md:pt-44'
                         >
                             {show ? (
@@ -52,7 +51,7 @@ const Cards = () => {
                                     show={show}
                                 />
                             )}
-                        </motion.button>
+                        </motion.div>
                     </div>
 
                     <div className='flex justify-center'>

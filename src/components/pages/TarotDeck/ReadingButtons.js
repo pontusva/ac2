@@ -6,19 +6,15 @@ const ReadingButtons = ({ updateReading, show }) => {
     return (
         <>
             <div className='h-screen'>
-                <AnimatePresence>
-                    {!show && (
-                        <motion.button
-                            key='ReadingButtons'
-                            inital={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            onClick={updateReading}
-                        >
-                            {draw}
-                        </motion.button>
-                    )}
-                </AnimatePresence>
+                <motion.button
+                    key='ReadingButtons'
+                    inital={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    onClick={updateReading}
+                >
+                    {draw}
+                </motion.button>
             </div>
         </>
     );
