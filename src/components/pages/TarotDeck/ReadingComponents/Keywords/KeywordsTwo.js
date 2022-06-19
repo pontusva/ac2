@@ -1,19 +1,27 @@
 import React from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
-const KeywordsTwo = ({ reading }) => {
+const KeywordsTwo = ({show, drawing}) => {
     return (
         <>
             <div>
-                <p className='text-center font-anton text-2xl underline uppercase pb-5 pt-7'>
-                    Keywords
-                </p>
-                {reading[1].keywords.map((keywords, index) => {
-                    return (
-                        <ul className='text-center' key={index}>
-                            <li>{keywords}</li>
-                        </ul>
-                    );
-                })}
+                <AnimatePresence>
+                    {show &&
+                        drawing[1].keywords.map((keywords, index) => {
+                            return (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0, scale: 2 }}
+                                >
+                                    <ul>
+                                        <li>{keywords}.</li>
+                                    </ul>
+                                </motion.div>
+                            );
+                        })}
+                </AnimatePresence>
             </div>
         </>
     );

@@ -1,13 +1,12 @@
 import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
 
-const KeywordsOne = ({ drawing, show }) => {
+const ShadowTwo = ({drawing, show}) => {
     return (
         <>
             <div>
                 <AnimatePresence>
                     {show &&
-                        drawing[0].keywords.map((keywords, index) => {
+                        drawing[1].meanings.light.map((light, index) => {
                             return (
                                 <motion.div
                                     key={index}
@@ -16,7 +15,7 @@ const KeywordsOne = ({ drawing, show }) => {
                                     exit={{ opacity: 0, scale: 2 }}
                                 >
                                     <ul>
-                                        <li>{keywords}.</li>
+                                        <li>{light}.</li>
                                     </ul>
                                 </motion.div>
                             );
@@ -27,4 +26,4 @@ const KeywordsOne = ({ drawing, show }) => {
     );
 };
 
-export default KeywordsOne;
+export default ShadowTwo;
