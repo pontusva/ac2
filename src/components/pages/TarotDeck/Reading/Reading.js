@@ -58,8 +58,6 @@ const Reading = () => {
 		return <h1>loading....</h1>;
 	}
 
-	console.log(drawReading(3));
-
 	return (
 		<>
 			<Navbar />
