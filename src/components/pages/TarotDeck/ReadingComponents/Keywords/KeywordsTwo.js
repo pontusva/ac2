@@ -2,6 +2,24 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const KeywordsTwo = ({show, drawing}) => {
+	const variants = {
+		initial: {
+			opacity: 0,
+			transition: {
+				duration: 2,
+			},
+		},
+		animate: {
+			opacity: [0, 1],
+		},
+		exit: {
+			opacity: 0,
+			scale: 0.75,
+			transition: {
+				duration: 2,
+			},
+		},
+	};
     return (
         <>
             <div>
@@ -11,9 +29,10 @@ const KeywordsTwo = ({show, drawing}) => {
                             return (
                                 <motion.div
                                     key={index}
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    exit={{ opacity: 0, scale: 2 }}
+									variants={variants}
+									initial="initial"
+									animate="animate"
+									exit="exit"
                                 >
                                     <ul>
                                         <li>{keywords}.</li>

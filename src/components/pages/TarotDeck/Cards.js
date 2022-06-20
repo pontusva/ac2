@@ -20,7 +20,7 @@ const Cards = () => {
         setDisable(true);
         setTimeout(() => {
             setDisable(false);
-        }, 3500);
+        }, 3000);
     };
 
     useEffect(() => {

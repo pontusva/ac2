@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ReadingDraw = ({showing}) => {
+const ReadingDraw = ({showing, disable}) => {
   return (
     <>
         <div>
-            <button onClick={showing}>Draw Cards</button>
+            <button disabled={disable} onClick={showing}>Draw Cards</button>
         </div>
     </>
   )

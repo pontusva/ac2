@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const ShadowTwo = ({ show, drawing }) => {
+const ReversedThree = ({ drawing, show }) => {
 	const variants = {
 		initial: {
 			opacity: 0,
@@ -23,27 +23,27 @@ const ShadowTwo = ({ show, drawing }) => {
 	return (
 		<>
 			<div>
-				<AnimatePresence>
-					{show &&
-						drawing[0].meanings.shadow.map((light, index) => {
-							return (
-								<motion.div
-									key={index}
+				<div>
+					<AnimatePresence>
+						{show && (
+							<div>
+								<motion.p
 									variants={variants}
 									initial="initial"
 									animate="animate"
 									exit="exit"
 								>
-									<ul>
-										<li>{light}.</li>
-									</ul>
-								</motion.div>
-							);
-						})}
-				</AnimatePresence>
+									{drawing[2].reversed === true
+										? "Yes"
+										: "No"}
+								</motion.p>
+							</div>
+						)}
+					</AnimatePresence>
+				</div>
 			</div>
 		</>
 	);
 };
 
-export default ShadowTwo;
+export default ReversedThree;

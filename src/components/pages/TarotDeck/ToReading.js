@@ -27,7 +27,7 @@ const ToReading = ({ show }) => {
                         >
                             Want More? Click{" "}
                             <Link to='/tarot/reading'>
-                                <button>here</button>
+                                <button className='underline font-bold'>here</button>
                             </Link>
                             {" "}for a reading with three cards
                         </motion.p>

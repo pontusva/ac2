@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const ShadowTwo = ({ show, drawing }) => {
+const LightThree = ({ drawing, show }) => {
 	const variants = {
 		initial: {
 			opacity: 0,
@@ -25,7 +25,7 @@ const ShadowTwo = ({ show, drawing }) => {
 			<div>
 				<AnimatePresence>
 					{show &&
-						drawing[0].meanings.shadow.map((light, index) => {
+						drawing[2].meanings.light.map((light, index) => {
 							return (
 								<motion.div
 									key={index}
@@ -46,4 +46,4 @@ const ShadowTwo = ({ show, drawing }) => {
 	);
 };
 
-export default ShadowTwo;
+export default LightThree;

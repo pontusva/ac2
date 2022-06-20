@@ -1,6 +1,7 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-const FortuneTellingTwo = ({ drawing, show }) => {
+
+const FortuneTellingThree = ({ drawing, show }) => {
 	const variants = {
 		initial: {
 			opacity: 0,
@@ -24,12 +25,12 @@ const FortuneTellingTwo = ({ drawing, show }) => {
 			<div>
 				<AnimatePresence>
 					{show &&
-						drawing[1].fortune_telling.map(
+						drawing[2].fortune_telling.map(
 							(telling, index) => {
 								return (
 									<motion.div
 										key={index}
-										variants={variants}
+                                        variants={variants}
 										initial="initial"
 										animate="animate"
 										exit="exit"
@@ -47,4 +48,4 @@ const FortuneTellingTwo = ({ drawing, show }) => {
 	);
 };
 
-export default FortuneTellingTwo;
+export default FortuneTellingThree;

@@ -1,10 +1,10 @@
 import React from "react";
 
-const ReadingClose = ({ close }) => {
+const ReadingClose = ({ close, disable }) => {
     return (
         <>
             <div>
-                <button onClick={close}> Close </button>
+                <button disabled={disable} onClick={close}> Close </button>
             </div>
         </>
     );
