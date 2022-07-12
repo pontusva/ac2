@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useCallback } from "react";
+import Particles from "react-tsparticles";
+import particlesOptions from "../../particles.json";
+import { loadFull } from "tsparticles";
 import { Link } from "react-router-dom";
 import bear from "../assets/bearn.png";
 import { motion } from "framer-motion";
 import CookieConsent from "react-cookie-consent";
 
-
-
 const Start = () => {
+			const particlesInit = useCallback((main) => {
+				loadFull(main);
+			}, []);
 	const buttonVariants = {
 		hide: {
 			opacity: 0,
@@ -53,16 +57,19 @@ const Start = () => {
 
 	return (
 		<>
-			<CookieConsent 
-			location="bottom">
+			<Particles 
+			
+			options={particlesOptions} init={particlesInit} />
+			<CookieConsent location="bottom">
 				This Site Uses Cookies
 			</CookieConsent>
-			;
-			<section>
-				<motion.div 
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				className="bg-cover bg-center fixed w-screen h-screen">
+
+			<section className='z-50'>
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					className="bg-cover bg-center fixed w-screen h-screen"
+				>
 					<div className="absolute w-2/3 m-auto md:bottom-[10%] left-[0%] right-[0%] justify-center items-center flex flex-col h-screen leading-4 md:text-4xl text-sm font-anton ">
 						<motion.img
 							src={bear}
@@ -89,7 +96,7 @@ const Start = () => {
 								—Dane Rudhyar
 							</motion.p>
 						</div>
-						<div className="flex">
+						<div className="flex z-50">
 							<Link to="/home">
 								<motion.button
 									className="border-2 border-black p-3 text-black rounded-full w-52"
