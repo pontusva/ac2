@@ -57,14 +57,12 @@ const Start = () => {
 
 	return (
 		<>
-			<Particles 
-			
-			options={particlesOptions} init={particlesInit} />
+			<Particles options={particlesOptions} init={particlesInit} />
 			<CookieConsent location="bottom">
 				This Site Uses Cookies
 			</CookieConsent>
 
-			<section className='z-50'>
+			<section className="z-50">
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -76,13 +74,13 @@ const Start = () => {
 							variants={bearVariants}
 							animate="animation"
 							alt="/"
-							className="md:w-1/3 md:h-1/3 self-center object-contain w-28 h-28 pb-5"
+							className="md:w-1/3 md:h-1/3 self-center object-contain w-28 h-28 pb-5 "
 						/>
 						<motion.p
 							initial="hidden"
 							animate={{ opacity: [0, 1] }}
 							transition={{ duration: 3, delay: 0.5 }}
-							className="py-2 md:py-0"
+							className="py-2 md:py-0 "
 						>
 							Astrology is a Language. If you understand
 							this language, The Sky Speaks to You.
